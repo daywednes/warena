@@ -809,13 +809,13 @@ header {
     background-position: bottom left 24%;
   }
   .ic-header-content h1 {
-    font-size: 48px !important;
+    font-size: 32px !important;
   }
 }
 
 @media (max-width: 576px) {
   .ic-header-content h1 {
-    font-size: 40px !important;
+    font-size: 32px !important;
   }
   .ic-header-content img {
     display: none;
@@ -842,7 +842,8 @@ header {
 }
 
 .navbar-brand-lg img {
-  height: 120px;
+  height: 60px;
+  margin: 20px;
 }
 
 /* Navigation */
@@ -936,7 +937,7 @@ main {
 .ic-header-content h1 {
   margin-top: 20px;
   margin-bottom: 50px;
-  font-size: 70px;
+  font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
