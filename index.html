@@ -1,1466 +1,841 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>
-      Warena - The first personalized and "play to earn" NFT Metaverse game
-    </title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta
-      name="description"
-      content="Warena is the first personalized and 'play to earn' NFT Metaverse game. Bring your identity to a countervailing strategy NFT Metaverse game."
-    />
-    <link rel="icon" href="favicon.ico" />
-    <meta
-      name="og:title"
-      property="og:title"
-      content="Warena - The first personalized and 'play to earn' NFT Metaverse game"
-    />
-    <meta
-      name="twitter:card"
-      content="Warena - The first personalized and 'play to earn' NFT Metaverse game"
-    />
-    <meta
-      property="og:image"
-      content="https://oht-design.net/warena/preview.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="https://oht-design.net/warena/preview.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="fonts/FontAwesome5/css/all.min.css" />
-    <link rel="stylesheet" href="fonts/rajdhani/fonts.css" />
-    <link rel="stylesheet" href="css/style.css?v=5" />
-    <link rel="stylesheet" href="css/roadmap.css" />
-  </head>
 
-  <body data-bs-spy="scroll" data-bs-target="#ICHeaderNavbar">
-    <div class="preloader">
-      <div class="status">
-        <div class="spinner">
-          <div class="bg-color-1 rect1"></div>
-          <div class="bg-color-1 rect2"></div>
-          <div class="bg-color-1 rect3"></div>
-          <div class="bg-color-1 rect4"></div>
-          <div class="bg-color-1 rect5"></div>
-        </div>
-      </div>
+<head>
+    <meta charset="utf-8">
+    <title>Warena - The first personalized and "play to earn" NFT Metaverse game</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Warena is the first personalized and 'play to earn' NFT Metaverse game. Bring your identity to a countervailing strategy NFT Metaverse game.">
+    <link rel="icon" href="favicon.ico">
+    <meta name="og:title" property="og:title" content="Warena - The first personalized and 'play to earn' NFT Metaverse game">
+    <meta name="twitter:card" content="Warena - The first personalized and 'play to earn' NFT Metaverse game">
+    <meta property="og:image" content="https://www.warena.io/preview.png">
+    <link rel="apple-touch-icon" href="https://www.warena.io/preview.png">
+    <link rel="stylesheet" href="plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap-5.1.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fonts/FontAwesome5/css/all.min.css">
+    <link rel="stylesheet" href="fonts/rajdhani/fonts.css">
+    <link rel="stylesheet" href="css/style.css?v=5">
+    <link rel="stylesheet" href="css/roadmap.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#ICHeaderNavbar">
+    <div class="ic-loading" id="IC_loading">
+        <img src="images/Logo_5x5.png" alt="loading..." height="150" />
     </div>
     <header id="home" class="position-relative">
-      <div class="ic-navigation">
-        <nav
-          class="navbar navbar-expand-lg navbar-dark ic-navigation-navbar w-100"
-          id="ICHeaderNavbar"
-        >
-          <div class="container">
-            <a class="navbar-brand d-lg-none" href="#home">
-              <img src="images/Logo_5x5.png" alt="Warena" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="
-                row
-                collapse
-                navbar-collapse
-                d-lg-flex
-                justify-content-lg-between
-                w-100
-              "
-              id="navbarSupportedContent"
-            >
-              <ul
-                class="
-                  col-lg-5
-                  pe-lg-3
-                  ic-navigation-navbar-nav
-                  navbar-nav
-                  justify-content-lg-between
-                  align-items-lg-center
-                "
-              >
-                <li class="nav-item">
-                  <a class="nav-link" href="#ICAbout">
-                    <span>About Warena</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#ICMetaverse">
-                    <span>Metaverse</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#ICGameFeatures">
-                    <span>Features</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#WAREToken">
-                    <span>Token</span>
-                  </a>
-                </li>
-              </ul>
-              <a
-                class="navbar-brand navbar-brand-lg me-0 d-lg-block d-none"
-                href="#home"
-              >
-                <img src="images/Logo_5x5.png" alt="Warena" />
-              </a>
-              <ul
-                class="
-                  col-lg-5
-                  ps-lg-3
-                  ic-navigation-navbar-nav
-                  navbar-nav
-                  justify-content-lg-between
-                  align-items-lg-center align-items-end
-                "
-              >
-                <li class="nav-item">
-                  <a class="nav-link" href="#ICRoadmap">
-                    <span>Roadmap</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#ICTeams">
-                    <span>Our Team</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#ICContact">
-                    <span>Contact</span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="
-                      nav-link
-                      ic-btn ic-btn-v2 ic-btn-primary
-                      px-3 px-xl-4
-                      ic-btn-play
-                      text-nowrap
-                      d-flex
-                      align-items-center
-                    "
-                    target="_blank"
-                    href="#"
-                  >
-                    <i class="fas fa-fire me-2 mb-1"></i>Play
-                  </a>
-                </li>
-              </ul>
+        <div class="ic-navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark ic-navigation-navbar w-100" id="ICHeaderNavbar">
+                <div class="container">
+                    <a class="navbar-brand d-lg-none" href="#home">
+                        <img src="images/Logo_5x5.png" alt="Warena">
+                    </a>
+                    <ul class="social-top">
+                        <li>
+                            <span>Follow us:</span>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://t.me/warenaofficial" class="telegram">
+                                <i class="fab fa-telegram" title="Telegram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/warenaofficial" class="twitter">
+                                <i class="fab fa-twitter" title="Twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://medium.com/warena" class="medium">
+                                <i class="fab fa-medium-m" title="Medium"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCQnmYpytaibTz6Uw-K6LcxQ" class="youtube">
+                                <i class="fab fa-youtube" title="Youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="row collapse navbar-collapse d-lg-flex justify-content-lg-between w-100" id="navbarSupportedContent">
+                        <ul class="col-lg-5 pe-lg-3 ic-navigation-navbar-nav navbar-nav justify-content-lg-between align-items-lg-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ICAbout">
+                                    <span>About Warena</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#ICMetaverse">
+                                    <span>Metaverse</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ICGameFeatures">
+                                    <span>Features</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#WAREToken">
+                                    <span>Token</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="navbar-brand navbar-brand-lg me-0 d-lg-block d-none" href="#home">
+                            <img src="images/Logo_5x5.png" alt="Warena">
+                        </a>
+                        <ul class="col-lg-5 ps-lg-3 ic-navigation-navbar-nav navbar-nav justify-content-lg-between align-items-lg-center align-items-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ICRoadmap">
+                                    <span>Roadmap</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ICTeams">
+                                    <span>Our Team</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ICContact">
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ic-btn ic-btn-v2 ic-btn-primary px-3 px-xl-4 ic-btn-play text-nowrap d-flex align-items-center" target="_blank" href="#">
+                                    <i class="fas fa-fire me-2 mb-1"></i>Play </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="ic-header-content">
+            <div class="mt-8 text-center">
+                <img src="images/banner-image-3.png" alt="Warena" style="max-height:260px">
+                <h1 style="filter:drop-shadow(0 1.75rem 1.75rem #000)">The first personalized and "play to earn" <br>NFT Metaverse game </h1>
             </div>
-          </div>
-        </nav>
-      </div>
-      <div class="ic-header-content">
-        <div class="mt-8 text-center">
-          <img
-            src="images/banner-image-3.png"
-            alt="Warena"
-            style="max-height: 300px; margin-bottom: 5vh"
-          />
-          <h1 style="filter: drop-shadow(0 1.75rem 1.75rem black)">
-            The first personalized and "play to earn" <br />
-            NFT Metaverse game
-          </h1>
+            <div class="mt-5 text-center">
+                <a href="#" class="ic-btn ic-btn-v2 ic-btn-primary text-center me-md-4" style="filter:drop-shadow(0 0 .75rem #dc143c)">
+                    <span class="ic-btn-text">White paper</span>
+                    <div class="ic-btn-hover"></div>
+                </a>
+                <a href="#" target="_blank" class="ic-btn ic-btn-v2 ic-btn-danger text-center mt-3 mt-md-0" style="filter:drop-shadow(0 0 .75rem #dc143c)">
+                    <span class="ic-btn-text">Play Now!</span>
+                    <div class="ic-btn-hover"></div>
+                </a>
+            </div>
+            <a href="#ICAbout" class="ic-mouse-scroll">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div>
+                    <span class="ic-scroll-arrows unu"></span>
+                    <span class="ic-scroll-arrows unu"></span>
+                    <span class="ic-scroll-arrows unu"></span>
+                </div>
+            </a>
         </div>
-        <div class="mt-5 text-center">
-          <a
-            href="#"
-            class="ic-btn ic-btn-v2 ic-btn-primary text-center me-md-4"
-            style="filter: drop-shadow(0 0 0.75rem crimson)"
-          >
-            <span class="ic-btn-text">White paper</span>
-            <div class="ic-btn-hover"></div>
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            class="ic-btn ic-btn-v2 ic-btn-danger text-center mt-3 mt-md-0"
-            style="filter: drop-shadow(0 0 0.75rem crimson)"
-          >
-            <span class="ic-btn-text">Play Now!</span>
-            <div class="ic-btn-hover"></div>
-          </a>
-        </div>
-        <a href="#ICAbout" class="ic-mouse-scroll">
-          <div class="mouse">
-            <div class="wheel"></div>
-          </div>
-          <div>
-            <span class="ic-scroll-arrows unu"></span>
-            <span class="ic-scroll-arrows unu"></span>
-            <span class="ic-scroll-arrows unu"></span>
-          </div>
-        </a>
-      </div>
     </header>
     <main id="ICMain">
-      <section class="ic-section ic-about pb-0 mt-5" id="ICAbout">
-        <div class="container">
-          <div class="row align-items-end">
-            <div class="col-xl-6 col-lg-7 pe-lg-5">
-              <div class="ic-section-title">
-                <h1 class="wow fadeInUp">ABOUT WARENA</h1>
-                <div class="ic-section-sub-title wow fadeIn ls-06em">
-                  <span>#</span>ABOUT
-                </div>
-              </div>
-              <p class="wow fadeInUp mt-4 fs-20" data-wow-delay=".1s">
-                Warena is the first personalized and "play to earn" NFT
-                Metaverse game.
-                <br />Bring your identity to a countervailing strategy NFT
-                Metaverse game.
-                <br />
-              </p>
-              <div class="row mt-4">
-                <div class="col-md-4">
-                  <div class="ic-f-item text-center">
-                    <span>Collect NFT</span>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="ic-f-item text-center">
-                    <span>Battle</span>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="ic-f-item text-center">
-                    <span>Personalized</span>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="ic-f-item text-center">
-                    <span>Strategy</span>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="ic-f-item text-center">
-                    <span>Stake</span>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="ic-f-item text-center">
-                    <span>Fusion/Breed</span>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="ic-f-item text-center">
-                    <span>War Arena</span>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="ic-f-item text-center">
-                    <span>Real-time</span>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="ic-f-item text-center">
-                    <span>Evolve</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="text-center col-xl-6 col-lg-5">
-              <!-- <div class="ic-about-intro ps-lg-4"> -->
-              <iframe
-                title="vimeo-player"
-                src="https://player.vimeo.com/video/592703414?h=00d080a679"
-                width="640"
-                height="360"
-                frameborder="0"
-                allowfullscreen
-              ></iframe>
-              <!-- </div> -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="ic-section ic-nft-game pt-4" id="ICNFTGame">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="text-center mb-5 mb-lg-0 mb-xl-0 col-lg-7">
-              <div class="swiper-container mySwiper me-lg-4">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="images/swipper/s-1.png" alt="1" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/swipper/s-2.png" alt="1" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/swipper/s-6.png" alt="1" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/swipper/s-4.png" alt="1" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/swipper/s-7.png" alt="1" />
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="text-justify ps-lg-4 fs-20">
-                <p class="wow fadeInUp" data-wow-delay=".1s">
-                  In Warena, the secret to winning battles, conquering
-                  strongholds and unifying the world lies in the selection of
-                  generals, the equipment for the generals and the tactics of
-                  the battle.
-                </p>
-                <p class="wow fadeInUp mt-4" data-wow-delay=".1s">
-                  We realize that those things are very important, affecting the
-                  player's experience and the ability to win in the game, so we
-                  have put these generals and game items on the blockchain
-                  (tokenization), helping players really experience the game and
-                  own these permanently and transparently.
-                </p>
-                <p class="wow fadeInUp mt-4" data-wow-delay=".1s">
-                  There are two types of tokens in the game: the Fungible Token
-                  and Non-Fungible Token (NFT)
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container mt-5 pt-5">
-          <div class="ic-section-title text-center">
-            <h1 class="wow fadeInUp">Personalized Character</h1>
-            <!-- <div class="ic-section-sub-title wow fadeIn ls-06em">
-                        <span>#</span>Personalized
-                    </div> -->
-          </div>
-          <div class="row gx-xl-4 gx-md-5 gy-md-3 mt-5">
-            <div class="col-xl-4 col-md-6 mt-5 mt-md-0">
-              <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
-                <div class="ic-f-item">
-                  <img
-                    src="images/flow/0.png"
-                    alt="Avatar created by Voila AI Artist"
-                  />
-                </div>
-                <div class="ic-f-item-flow-title">
-                  Avatar created by Voila AI Artist
-                </div>
-                <div class="ic-f-item-flow-desc">
-                  The end-users
-                  <b class="ic-text-primary">uploads their personalized</b>Voila
-                  AI Artist avatars
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 mt-5 mt-md-0">
-              <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
-                <div class="ic-f-item">
-                  <img src="images/flow/b1.png" alt="Character template" />
-                </div>
-                <div class="ic-f-item-flow-title">Character template</div>
-                <div class="ic-f-item-flow-desc">
-                  <b class="text-danger">Configure</b>their preference body
-                  parts
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 mt-5 mt-xl-0">
-              <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
-                <div class="ic-f-item">
-                  <img
-                    src="images/flow/b5.png"
-                    alt=" Personalized character NFT Warrior"
-                  />
-                </div>
-                <div class="ic-f-item-flow-title">
-                  Personalized character NFT Warrior
-                </div>
-                <div class="ic-f-item-flow-desc">
-                  <b class="ic-text-primary">Summon WARRIOR</b>by triggering the
-                  NFT ticket
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="ic-section ic-metaverse" id="ICMetaverse">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6 col-lg-7 pe-lg-5">
-              <div class="ic-section-title">
-                <h1 class="wow fadeInUp">Metaverse</h1>
-                <div class="ic-section-sub-title wow fadeIn ls-06em">
-                  <span>#</span>H O T
-                </div>
-              </div>
-              <p class="wow fadeInUp mt-4 fs-20" data-wow-delay=".1s">
-                The on-going conflicts led the world into an Innovation Phase,
-                where multiple combinations of cross-breeding and cross-fusion
-                were facilitated. From this, we accelerated onto The New World.
-              </p>
-              <p>
-                In this Phase, a fresh World Map is created, and players are
-                required to rebuild and recreate every structure and detail to
-                prevent another apocalypse to humanity, while also maintaining a
-                balanced Token Economics at the same time. Onward, we enter the
-                Warena Metaverse.
-              </p>
-            </div>
-            <div class="text-center col-xl-6 col-lg-5">
-              <div class="ic-f-item">
-                <img src="images/features/f2.png" class="w-100" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container mt-5 pt-5">
-          <div class="ic-section-title text-center">
-            <h1 class="wow fadeInUp">Cross-over</h1>
-            <!-- <div class="ic-section-sub-title wow fadeIn ls-06em">
-                        <span>#</span>Personalized
-                    </div> -->
-          </div>
-          <div class="row gx-xl-4 gx-md-5 gy-md-3 mt-5">
-            <div class="col-xl-4 col-md-6 mt-5 mt-md-0">
-              <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
-                <div class="ic-f-item">
-                  <img src="images/flow/g2.png" alt="Character template" />
-                </div>
-                <!-- <div class="ic-f-item-flow-title">Character template</div>
-                <div class="ic-f-item-flow-desc">
-                  <b class="text-danger">Configure</b>their preference body
-                  parts
-                </div> -->
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 mt-5 mt-xl-0">
-              <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
-                <div class="ic-f-item">
-                  <img
-                    src="images/flow/g3.png"
-                    alt=" Personalized character NFT Warrior"
-                  />
-                </div>
-                <!-- <div class="ic-f-item-flow-title">
-                  Personalized character NFT Warrior
-                </div>
-                <div class="ic-f-item-flow-desc">
-                  <b class="ic-text-primary">Summon WARRIOR</b>by triggering the
-                  NFT ticket
-                </div> -->
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 mt-5 mt-md-0">
-              <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
-                <div class="ic-f-item">
-                  <img
-                    src="images/flow/g1.png"
-                    alt="Avatar created by Voila AI Artist"
-                    style="height: 250px"
-                  />
-                </div>
-                <!-- <div class="ic-f-item-flow-title">
-                  Avatar created by Voila AI Artist
-                </div>
-                <div class="ic-f-item-flow-desc">
-                  The end-users
-                  <b class="ic-text-primary">uploads their personalized</b>Voila
-                  AI Artist avatars
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="ic-section ic-game-features pb-5" id="ICGameFeatures">
-        <div class="container">
-          <div class="ic-section-title right">
-            <h1 class="wow fadeInUp">GAME FEATURES</h1>
-            <div class="ic-section-sub-title wow fadeIn ls-06em">
-              <span>#</span>GAME
-            </div>
-          </div>
-          <p class="mt-4 fs-20 text-end">
-            CHARACTER CUSTOMIZATION across elements, roles, rarity, skills.
-            <br />PvE (player vs environment)-PvP (player vs player)-PvP Area
-            (player vs players)
-          </p>
-          <div class="row mt-3">
-            <div class="col-xl-9">
-              <div
-                class="
-                  swiper-container
-                  featuresSwiper
-                  pt-4
-                  pb-5
-                  wow
-                  slideInLeft
-                "
-              >
-                <img src="images/features/f3.png" class="w-100" alt="1" />
-              </div>
-            </div>
-            <div class="col-xl-3">
-              <div class="ic-features-more wow slideInRight">
-                <div
-                  class="ic-features-more-item active wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-bs-toggle="tooltip"
-                  title="Fire"
-                >
-                  <span class="ic-f-elements">Elements</span>
-                  <img src="images/icons/e-1.png" />
-                </div>
-                <div
-                  class="ic-features-more-item wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-bs-toggle="tooltip"
-                  title="Water"
-                >
-                  <span class="ic-f-elements">Elements</span>
-                  <img src="images/icons/e-2.png" />
-                </div>
-                <div
-                  class="ic-features-more-item wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-bs-toggle="tooltip"
-                  title="Grass"
-                >
-                  <span class="ic-f-elements">Elements</span>
-                  <img src="images/icons/e-3.png" />
-                </div>
-                <div
-                  class="ic-features-more-item wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-bs-toggle="tooltip"
-                  title="Thunder"
-                >
-                  <span class="ic-f-elements">Elements</span>
-                  <img src="images/icons/e-4.png" />
-                </div>
-                <div
-                  class="ic-features-more-item wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-bs-toggle="tooltip"
-                  title="Rock"
-                >
-                  <span class="ic-f-elements">Elements</span>
-                  <img src="images/icons/e-5.png" />
-                </div>
-                <div
-                  class="ic-features-more-item wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-bs-toggle="tooltip"
-                  title="Ice"
-                >
-                  <span class="ic-f-elements">Elements</span>
-                  <img src="images/icons/e-6.png" />
-                </div>
-                <div
-                  class="ic-features-more-item wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-bs-toggle="tooltip"
-                  title="Common"
-                >
-                  <span class="ic-f-rarities">Rarities</span>
-                  <img src="images/icons/rar-1.png" />
-                </div>
-                <div
-                  class="ic-features-more-item wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-bs-toggle="tooltip"
-                  title="Rare"
-                >
-                  <span class="ic-f-rarities">Rarities</span>
-                  <img src="images/icons/rar-2.png" />
-                </div>
-                <div
-                  class="ic-features-more-item wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-bs-toggle="tooltip"
-                  title="Epic"
-                >
-                  <span class="ic-f-rarities">Rarities</span>
-                  <img src="images/icons/rar-3.png" />
-                </div>
-                <div
-                  class="ic-features-more-item wow fadeInUp"
-                  data-wow-delay=".1s"
-                  data-bs-toggle="tooltip"
-                  title="Legend"
-                >
-                  <span class="ic-f-rarities">Rarities</span>
-                  <img src="images/icons/rar-4.png" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="ic-section ic-game-flow pt-5" id="ICGameFlow">
-        <div class="container">
-          <div class="ic-section-title text-center">
-            <h1 class="wow fadeInUp">FLOW IN GAME</h1>
-          </div>
-          <div class="row gx-xl-4 gx-md-5 gy-md-3 mt-5">
-            <div class="col-xl-3 col-md-6 mt-5 mt-md-0">
-              <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
-                <div class="ic-f-item">
-                  <img src="images/flow/b5.png" alt="P2E - Play To Earn" />
-                </div>
-                <div class="ic-f-item-flow-title">Personalized Character</div>
-                <div class="ic-f-item-flow-desc">
-                  <b class="ic-text-primary">Enter and play</b>to create your
-                  Warrior
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mt-5 mt-md-0">
-              <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
-                <div class="ic-f-item">
-                  <img src="images/flow/b2.png" alt="NFT Warrior" />
-                </div>
-                <div class="ic-f-item-flow-title">NFT Warrior</div>
-                <div class="ic-f-item-flow-desc">
-                  <b class="text-danger">Keep playing</b>to earn coinsand NFT
-                  Warrior
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mt-5 mt-xl-0">
-              <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
-                <div class="ic-f-item">
-                  <img
-                    src="images/flow/b6.png"
-                    alt="Upgrade NFT Warrior Rare -> Epic -> Legend"
-                  />
-                </div>
-                <div class="ic-f-item-flow-title">
-                  Upgrade Rare -> Epic -> Legend
-                </div>
-                <div class="ic-f-item-flow-desc">
-                  <b class="ic-text-primary">Summon</b>your WARRIOR (many
-                  levels)
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mt-5 mt-xl-0">
-              <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
-                <div class="ic-f-item">
-                  <img src="images/flow/b4.png" alt="P2E - Play to Earn" />
-                </div>
-                <div class="ic-f-item-flow-title">P2E - Play to Earn</div>
-                <div class="ic-f-item-flow-desc">
-                  <b class="text-danger">Keep playing</b>to come back and earn
-                  coins
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="ic-section ic-token" id="WAREToken">
-        <div class="container">
-          <div class="ic-section-title">
-            <h1 class="wow fadeInUp">TOKEN</h1>
-            <div class="ic-section-sub-title wow fadeIn ls-06em">
-              <span>#</span>TOKEN
-            </div>
-          </div>
-          <p class="wow fadeInUp mt-4 fs-20" data-wow-delay=".1s">
-            We are committed to building games, communities and ecosystems in a
-            sustainable way. <br />So all the token metrics such as the total
-            number, the allocation ratio, the lock rate ... are carefully
-            considered.
-          </p>
-          <div class="row align-items-center mt-5">
-            <div class="col-xl-5 col-lg-6 px-xl-5 order-xl-1 mb-5 mb-xl-0">
-              <div class="pe-lg-5 wow slideInDown" data-wow-delay=".3s">
-                <canvas
-                  id="WARETokenChart"
-                  onmouseleave='$("#ic-chart-legends li").removeClass("active")'
-                ></canvas>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-6">
-              <ul class="row ic-chart-data" id="ic-chart-legends">
-                <li class="col-sm-6">
-                  <div
-                    class="ic-chart-data-item wow slideInLeft"
-                    data-wow-delay=".1s"
-                  >
-                    <span class="ic-chart-data-label">Ecosystem</span>
-                    <span class="ic-chart-data-info">
-                      <span class="ic-chart-data-percent">30%</span>
-                      <span class="ic-chart-data-sublabel"
-                        >(30,000,000 token)</span
-                      >
-                    </span>
-                  </div>
-                </li>
-                <li class="col-sm-6">
-                  <div
-                    class="ic-chart-data-item wow slideInLeft"
-                    data-wow-delay=".1s"
-                  >
-                    <span class="ic-chart-data-label">Reward</span>
-                    <span class="ic-chart-data-info">
-                      <span class="ic-chart-data-percent">35%</span>
-                      <span class="ic-chart-data-sublabel"
-                        >(35,000,000 token)</span
-                      >
-                    </span>
-                  </div>
-                </li>
-                <li class="col-sm-6">
-                  <div
-                    class="ic-chart-data-item wow slideInLeft"
-                    data-wow-delay=".2s"
-                  >
-                    <span class="ic-chart-data-label">Dev Team</span>
-                    <span class="ic-chart-data-info">
-                      <span class="ic-chart-data-percent">10%</span>
-                      <span class="ic-chart-data-sublabel"
-                        >(10,000,000 token)</span
-                      >
-                    </span>
-                  </div>
-                </li>
-                <li class="col-sm-6">
-                  <div
-                    class="ic-chart-data-item wow slideInLeft"
-                    data-wow-delay=".2s"
-                  >
-                    <span class="ic-chart-data-label">Founder Team</span>
-                    <span class="ic-chart-data-info">
-                      <span class="ic-chart-data-percent">6%</span>
-                      <span class="ic-chart-data-sublabel"
-                        >(6,000,000 token)</span
-                      >
-                    </span>
-                  </div>
-                </li>
-                <li class="col-sm-6">
-                  <div
-                    class="ic-chart-data-item wow slideInLeft"
-                    data-wow-delay=".3s"
-                  >
-                    <span class="ic-chart-data-label">Advisors</span>
-                    <span class="ic-chart-data-info">
-                      <span class="ic-chart-data-percent">3%</span>
-                      <span class="ic-chart-data-sublabel"
-                        >(3,000,000 token)</span
-                      >
-                    </span>
-                  </div>
-                </li>
-                <li class="col-sm-6">
-                  <div
-                    class="ic-chart-data-item wow slideInLeft"
-                    data-wow-delay=".3s"
-                  >
-                    <span class="ic-chart-data-label">Marketing</span>
-                    <span class="ic-chart-data-info">
-                      <span class="ic-chart-data-percent">10%</span>
-                      <span class="ic-chart-data-sublabel"
-                        >(10,000,000 token)</span
-                      >
-                    </span>
-                  </div>
-                </li>
-                <li class="col-sm-6">
-                  <div
-                    class="ic-chart-data-item wow slideInLeft"
-                    data-wow-delay=".4s"
-                  >
-                    <span class="ic-chart-data-label">Private sale</span>
-                    <span class="ic-chart-data-info">
-                      <span class="ic-chart-data-percent">4%</span>
-                      <span class="ic-chart-data-sublabel"
-                        >(4,000,000 token)</span
-                      >
-                    </span>
-                  </div>
-                </li>
-                <li class="col-sm-6">
-                  <div
-                    class="ic-chart-data-item wow slideInLeft"
-                    data-wow-delay=".4s"
-                  >
-                    <span class="ic-chart-data-label">Public IDO</span>
-                    <span class="ic-chart-data-info">
-                      <span class="ic-chart-data-percent">2%</span>
-                      <span class="ic-chart-data-sublabel"
-                        >(2,000,000 token)</span
-                      >
-                    </span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-xl-3 order-last mt-5 mt-xl-0">
-              <div class="row">
-                <div class="col-xl-12 col-lg-6 col-md-6">
-                  <div
-                    class="ic-token-info-item wow slideInRight"
-                    data-wow-delay=".1s"
-                  >
-                    <div class="ic-token-info-title">Token Name</div>
-                    <h4 class="ic-token-info-desc">Warena Token</h4>
-                  </div>
-                </div>
-                <div class="col-xl-12 col-lg-6 col-md-6">
-                  <div
-                    class="ic-token-info-item wow slideInRight"
-                    data-wow-delay=".2s"
-                  >
-                    <div class="ic-token-info-title">Token Symbol</div>
-                    <h4 class="ic-token-info-desc">RENA</h4>
-                  </div>
-                </div>
-                <div class="col-xl-12 col-lg-6 col-md-6">
-                  <div
-                    class="ic-token-info-item wow slideInRight"
-                    data-wow-delay=".3s"
-                  >
-                    <div class="ic-token-info-title">Total supply</div>
-                    <h4 class="ic-token-info-desc">100.000.000 RENA</h4>
-                  </div>
-                </div>
-                <div class="col-xl-12 col-lg-6 col-md-6">
-                  <div
-                    class="ic-token-info-item wow slideInRight"
-                    data-wow-delay=".4s"
-                  >
-                    <div class="ic-token-info-title">Blockchain network</div>
-                    <h4 class="ic-token-info-desc">
-                      Binance Smart Chain (BSC)
-                    </h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="ic-section ic-section-token-economics pt-5">
-        <div class="container">
-          <div class="ic-section-title right">
-            <h1 class="wow fadeInUp">TOKEN ECONOMICS</h1>
-            <div class="ic-section-sub-title wow fadeIn ls-06em">
-              <span>#</span>TOKEN
-            </div>
-          </div>
-          <p class="mt-4 wow fadeInUp fs-20 mb-4 text-end">
-            WARE token is the main in-game currency. It will be used for
-            trading, exchanging, improving the Warriors and their special
-            qualities.
-          </p>
-          <div class="row gx-xl-5 gx-md-5 gy-md-3 mt-5">
-            <div class="col-xl-3 col-md-6">
-              <div
-                class="ic-f-item ic-f-item-full-height wow fadeInUp text-center"
-                data-wow-delay=".1s"
-              >
-                <div class="ic-f-item-icon mb-3">
-                  <img src="images/token-economics/1.png" height="150" />
-                </div>
-                <h4>In-game Currency</h4>
-                <p>Most items in the game will be payable using F0x tokens.</p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div
-                class="ic-f-item ic-f-item-full-height wow fadeInUp text-center"
-                data-wow-delay=".2s"
-              >
-                <div class="ic-f-item-icon mb-3">
-                  <img src="images/token-economics/2.png" height="150" />
-                </div>
-                <h4>Governance</h4>
-                <p>
-                  Vote for new features and settings of the game to earn special
-                  rewards. Lock F0x tokens for a certain time to gain voting
-                  power.
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div
-                class="ic-f-item ic-f-item-full-height wow fadeInUp text-center"
-                data-wow-delay=".3s"
-              >
-                <div class="ic-f-item-icon mb-3">
-                  <img src="images/token-economics/3.png" height="150" />
-                </div>
-                <h4>Staking</h4>
-                <p>
-                  Become part of the game by staking F0x tokens into pools.
-                  Different pools will yield different returns such as new
-                  items, new rbots, or F0x tokens.
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div
-                class="ic-f-item ic-f-item-full-height wow fadeInUp text-center"
-                data-wow-delay=".4s"
-              >
-                <div class="ic-f-item-icon mb-3">
-                  <img src="images/token-economics/4.png" height="150" />
-                </div>
-                <h4>Play 2 Earn</h4>
-                <p>
-                  Simply playing can also get you F0x tokens via mission and
-                  social mining.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="ic-section ic-roadmap pb-0" id="ICRoadmap">
-        <div class="container">
-          <div class="ic-section-title center">
-            <h1 class="wow fadeInUp">ROADMAP</h1>
-          </div>
-          <p class="wow fadeInUp mt-4 text-center fs-20" data-wow-delay=".1s">
-            Warena brings traditional game experiences, play to earn and Defi to
-            NFT collectibles.
-          </p>
-          <div class="ic-roadmap-content pt-4">
-            <div class="roadmap-all">
-              <div class="roadmap-wrap roadmap-wrap-s1 mb-0">
-                <div class="row no-gutters mt-5">
-                  <div class="col-lg">
-                    <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
-                      <div class="roadmap-step roadmap-step-s1">
-                        <div class="roadmap-head roadmap-head-s1">
-                          <span class="roadmap-time roadmap-time-s1"
-                            >Q1, Q2-2021</span
-                          >
-                          <span class="roadmap-title roadmap-title-s1"
-                            >Prepare and planning</span
-                          >
+        <section class="ic-section ic-about pb-0 mt-5" id="ICAbout">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-xl-6 col-lg-7 pe-lg-5">
+                        <div class="ic-section-title">
+                            <h1 class="wow fadeInUp">ABOUT WARENA</h1>
+                            <div class="ic-section-sub-title wow fadeIn ls-06em">
+                                <span>#</span>ABOUT
+                            </div>
                         </div>
-                        <ul class="roadmap-step-list-s1">
-                          <li>
-                            Verify ideals, start designing and building the IC
-                            games.
-                          </li>
-                          <li>
-                            Connect with advisors and prepare for official
-                            plans.
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg">
-                    <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
-                      <div class="roadmap-step roadmap-step-s1">
-                        <div class="roadmap-head roadmap-head-s1">
-                          <span class="roadmap-phase">Phase 1 - Survival</span>
-                          <span class="roadmap-time roadmap-time-s1"
-                            >Q3-2021</span
-                          >
-                          <span class="roadmap-title roadmap-title-s1"
-                            >Launch Version 0</span
-                          >
+                        <p class="wow fadeInUp mt-4 fs-20" data-wow-delay=".1s">Warena is the first personalized and "play to earn" NFT Metaverse game. <br>Bring your identity to a countervailing strategy NFT Metaverse game. <br>
+                        </p>
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <div class="ic-f-item text-center">
+                                    <span>Collect NFT</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="ic-f-item text-center">
+                                    <span>Battle</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="ic-f-item text-center">
+                                    <span>Personalized</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="ic-f-item text-center">
+                                    <span>Strategy</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="ic-f-item text-center">
+                                    <span>Stake</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="ic-f-item text-center">
+                                    <span>Fusion/Breed</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="ic-f-item text-center">
+                                    <span>War Arena</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="ic-f-item text-center">
+                                    <span>Real-time</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="ic-f-item text-center">
+                                    <span>Evolve</span>
+                                </div>
+                            </div>
                         </div>
-                        <ul class="roadmap-step-list-s1">
-                          <li>Introduce Marketplace & NFT Items (IC coins)</li>
-                          <li>Release races: Human and Machine Warrior.</li>
-                          <li>Release roles: Fighter.Offer PvE & Async PvP.</li>
-                          <li>Launch on web.</li>
-                        </ul>
-                      </div>
                     </div>
-                  </div>
-                  <div class="col-lg">
-                    <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
-                      <div class="roadmap-step roadmap-step-s1">
-                        <div class="roadmap-head roadmap-head-s1">
-                          <span class="roadmap-time roadmap-time-s1"
-                            >Q4-2021</span
-                          >
-                          <span class="roadmap-title roadmap-title-s1"
-                            >Launch Version 1</span
-                          >
-                        </div>
-                        <ul class="roadmap-step-list-s1">
-                          <li>Improve Arena</li>
-                          <li>Feature PVP Arena at 10-20 users.</li>
-                          <li>Release 4 elements for Machine Warrior.</li>
-                          <li>Launch on mobile.</li>
-                        </ul>
-                      </div>
+                    <div class="text-center col-xl-6 col-lg-5">
+                        <iframe height="360" src="https://www.youtube.com/embed/hl1tbp5xi7s" style="width:100%" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                  </div>
-                  <div class="col-lg">
-                    <div
-                      class="roadmap roadmap-s1 roadmap-current text-lg-center"
-                    >
-                      <div class="roadmap-step roadmap-step-s1">
-                        <div class="roadmap-head roadmap-head-s1">
-                          <span class="roadmap-time roadmap-time-s1"
-                            >Q1-2022</span
-                          >
-                          <span class="roadmap-title roadmap-title-s1"
-                            >Launch Version 2</span
-                          >
-                        </div>
-                        <ul class="roadmap-step-list-s1">
-                          <li>
-                            Release roles: Tanker, Fighter, Archer, Mage,
-                            Supporter for Machine Warrior.
-                          </li>
-                          <li>Release 6 elements for Machine Warrior.</li>
-                          <li>Introducing Phase 2 Detail.</li>
-                          <li>Add new PVE gameplay.Create 3D characters.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <div class="roadmap-wrap roadmap-wrap-s1 mb-0">
-                <div class="row flex-row-reverse no-gutters">
-                  <div class="col-lg">
-                    <div class="roadmap roadmap-s1 text-lg-center">
-                      <div class="roadmap-step roadmap-step-s1">
-                        <div class="roadmap-head roadmap-head-s1">
-                          <!-- <span class="roadmap-phase"
-                            >Phase 2 - Innovation</span
-                          > -->
-                          <span class="roadmap-phase text-danger"
-                            >Phase2 - Warena Metevaerse</span
-                          >
-                          <span class="roadmap-time roadmap-time-s1"
-                            >Q2-2022</span
-                          >
-                          <span class="roadmap-title roadmap-title-s1"
-                            >Launch Version 1</span
-                          >
-                        </div>
-                        <ul class="roadmap-step-list-s1">
-                          <li>
-                            Release roles: Tanker, Fighter, Archer, Mage,
-                            Supporter for Machine Warrior.
-                          </li>
-                          <li>Release 6 elements for Machine Warrior.</li>
-                          <li>Introducing Phase 2 Detail.</li>
-                          <li>Add new PVE gameplay.Create 3D characters.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg">
-                    <div class="roadmap roadmap-s1 text-lg-center">
-                      <div class="roadmap-step roadmap-step-s1">
-                        <div class="roadmap-head roadmap-head-s1">
-                          <span class="roadmap-time roadmap-time-s1"
-                            >Q3-2022</span
-                          >
-                          <span class="roadmap-title roadmap-title-s1"
-                            >Launch Version 2</span
-                          >
-                        </div>
-                        <ul class="roadmap-step-list-s1">
-                          <li>Release full 6 elements for humans.</li>
-                          <li>Add Multi-Dungeons Feature.</li>
-                          <li>Introducing Phase 3 Detail.</li>
-                          <li>
-                            Introducing Map on phase 3 with elements land.
-                          </li>
-                          <li>Presale Land for Land Battle on phase 3.</li>
-                          <li>Presale races: Demon, Dragon, Elf, Angel.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg">
-                    <div class="roadmap roadmap-s1 text-lg-center">
-                      <div class="roadmap-step roadmap-step-s1">
-                        <div class="roadmap-head roadmap-head-s1">
-                          <span class="roadmap-time roadmap-time-s1"
-                            >Q4-2022</span
-                          >
-                          <span class="roadmap-title roadmap-title-s1"
-                            >Launch Version 3</span
-                          >
-                        </div>
-                        <ul class="roadmap-step-list-s1">
-                          <li>
-                            Release races: Dragon, Elf with full roles and
-                            elements.
-                          </li>
-                          <li>
-                            Add a new gameplay to have players build and protect
-                            on their land.
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="roadmap-wrap roadmap-wrap-s1 mb-0">
-                <div class="row no-gutters">
-                  <div class="col-lg">
-                    <div class="roadmap roadmap-s1 text-lg-center">
-                      <div class="roadmap-step roadmap-step-s1">
-                        <div class="roadmap-head roadmap-head-s1">
-                          <span class="roadmap-time roadmap-time-s1"
-                            >Q1-2023</span
-                          >
-                          <span class="roadmap-title roadmap-title-s1"
-                            >Launch Version 4</span
-                          >
-                        </div>
-                        <ul class="roadmap-step-list-s1">
-                          <li>
-                            Add feature allow allows players to invade each
-                            other
-                          </li>
-                          <li>View AR your warriors</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
+        </section>
+        <section class="ic-section ic-nft-game pt-4" id="ICNFTGame">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="text-center mb-5 mb-lg-0 mb-xl-0 col-lg-7">
+                        <div class="swiper-container mySwiper me-lg-4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/swipper/s-1.png" alt="1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/swipper/s-2.png" alt="1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/swipper/s-6.png" alt="1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/swipper/s-4.png" alt="1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/swipper/s-7.png" alt="1">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="text-justify ps-lg-4 fs-20">
+                            <p class="wow fadeInUp" data-wow-delay=".1s">In Warena, the secret to winning battles, conquering strongholds and unifying the world lies in the selection of generals, the equipment for the generals and the tactics of the battle.</p>
+                            <p class="wow fadeInUp mt-4" data-wow-delay=".1s">We realize that those things are very important, affecting the player's experience and the ability to win in the game, so we have put these generals and game items on the blockchain (tokenization), helping players really experience
+                                the game and own these permanently and transparently.</p>
+                            <p class="wow fadeInUp mt-4" data-wow-delay=".1s">There are two types of tokens in the game: the Fungible Token and Non-Fungible Token (NFT)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5 pt-5">
+                <div class="ic-section-title text-center">
+                    <h1 class="wow fadeInUp">Personalized Character</h1>
+                </div>
+                <div class="row gx-xl-4 gx-md-5 gy-md-3 mt-5">
+                    <div class="col-xl-4 col-md-6 mt-5 mt-md-0">
+                        <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
+                            <div class="ic-f-item">
+                                <img src="images/flow/0.png" alt="Avatar created by Voila AI Artist">
+                            </div>
+                            <div class="ic-f-item-flow-title">Avatar created by Voila AI Artist</div>
+                            <div class="ic-f-item-flow-desc">The end-users <b class="ic-text-primary">uploads their personalized</b>Voila AI Artist avatars </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mt-5 mt-md-0">
+                        <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
+                            <div class="ic-f-item">
+                                <img src="images/flow/b1.png" alt="Character template">
+                            </div>
+                            <div class="ic-f-item-flow-title">Character template</div>
+                            <div class="ic-f-item-flow-desc">
+                                <b class="text-danger">Configure</b>their preference body parts
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mt-5 mt-xl-0">
+                        <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
+                            <div class="ic-f-item">
+                                <img src="images/flow/b5.png" alt=" Personalized character NFT Warrior">
+                            </div>
+                            <div class="ic-f-item-flow-title">Personalized character NFT Warrior</div>
+                            <div class="ic-f-item-flow-desc">
+                                <b class="ic-text-primary">Summon WARRIOR</b>by triggering the NFT ticket
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ic-section ic-metaverse" id="ICMetaverse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-7 pe-lg-5">
+                        <div class="ic-section-title">
+                            <h1 class="wow fadeInUp">Metaverse</h1>
+                            <div class="ic-section-sub-title wow fadeIn ls-06em">
+                                <span>#</span>H O T
+                            </div>
+                        </div>
+                        <p class="wow fadeInUp mt-4 fs-20" data-wow-delay=".1s">The on-going conflicts led the world into an Innovation Phase, where multiple combinations of cross-breeding and cross-fusion were facilitated. From this, we accelerated onto The New World.</p>
+                        <p>In this Phase, a fresh World Map is created, and players are required to rebuild and recreate every structure and detail to prevent another apocalypse to humanity, while also maintaining a balanced Token Economics at the same time.
+                            Onward, we enter the Warena Metaverse.</p>
+                    </div>
+                    <div class="text-center col-xl-6 col-lg-5">
+                        <div class="ic-f-item">
+                            <img src="images/features/f2.png" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5 pt-5">
+                <div class="ic-section-title text-center">
+                    <h1 class="wow fadeInUp">Cross-over</h1>
+                </div>
+                <div class="row gx-xl-4 gx-md-5 gy-md-3 mt-5">
+                    <div class="col-xl-4 col-md-6 mt-5 mt-md-0">
+                        <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
+                            <div class="ic-f-item">
+                                <img src="images/flow/g2.png" alt="Character template">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mt-5 mt-xl-0">
+                        <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
+                            <div class="ic-f-item">
+                                <img src="images/flow/g3.png" alt=" Personalized character NFT Warrior">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mt-5 mt-md-0">
+                        <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
+                            <div class="ic-f-item">
+                                <img src="images/flow/g1.png" alt="Avatar created by Voila AI Artist" style="height:250px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ic-section ic-game-features pb-5" id="ICGameFeatures">
+            <div class="container">
+                <div class="ic-section-title right">
+                    <h1 class="wow fadeInUp">GAME FEATURES</h1>
+                    <div class="ic-section-sub-title wow fadeIn ls-06em">
+                        <span>#</span>GAME
+                    </div>
+                </div>
+                <p class="mt-4 fs-20 text-end">CHARACTER CUSTOMIZATION across elements, roles, rarity, skills. <br>PvE (player vs environment)-PvP (player vs player)-PvP Area (player vs players) </p>
+                <div class="row mt-3">
+                    <div class="col-xl-9">
+                        <div class="swiper-container featuresSwiper pt-4 pb-5 wow slideInLeft">
+                            <img src="images/features/f3.png" class="w-100" alt="1">
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="ic-features-more wow slideInRight">
+                            <div class="ic-features-more-item active wow fadeInUp" data-wow-delay=".1s" data-bs-toggle="tooltip" title="Fire">
+                                <span class="ic-f-elements">Elements</span>
+                                <img src="images/icons/e-1.png">
+                            </div>
+                            <div class="ic-features-more-item wow fadeInUp" data-wow-delay=".1s" data-bs-toggle="tooltip" title="Water">
+                                <span class="ic-f-elements">Elements</span>
+                                <img src="images/icons/e-2.png">
+                            </div>
+                            <div class="ic-features-more-item wow fadeInUp" data-wow-delay=".1s" data-bs-toggle="tooltip" title="Grass">
+                                <span class="ic-f-elements">Elements</span>
+                                <img src="images/icons/e-3.png">
+                            </div>
+                            <div class="ic-features-more-item wow fadeInUp" data-wow-delay=".1s" data-bs-toggle="tooltip" title="Thunder">
+                                <span class="ic-f-elements">Elements</span>
+                                <img src="images/icons/e-4.png">
+                            </div>
+                            <div class="ic-features-more-item wow fadeInUp" data-wow-delay=".1s" data-bs-toggle="tooltip" title="Rock">
+                                <span class="ic-f-elements">Elements</span>
+                                <img src="images/icons/e-5.png">
+                            </div>
+                            <div class="ic-features-more-item wow fadeInUp" data-wow-delay=".1s" data-bs-toggle="tooltip" title="Ice">
+                                <span class="ic-f-elements">Elements</span>
+                                <img src="images/icons/e-6.png">
+                            </div>
+                            <div class="ic-features-more-item wow fadeInUp" data-wow-delay=".1s" data-bs-toggle="tooltip" title="Common">
+                                <span class="ic-f-rarities">Rarities</span>
+                                <img src="images/icons/rar-1.png">
+                            </div>
+                            <div class="ic-features-more-item wow fadeInUp" data-wow-delay=".1s" data-bs-toggle="tooltip" title="Rare">
+                                <span class="ic-f-rarities">Rarities</span>
+                                <img src="images/icons/rar-2.png">
+                            </div>
+                            <div class="ic-features-more-item wow fadeInUp" data-wow-delay=".1s" data-bs-toggle="tooltip" title="Epic">
+                                <span class="ic-f-rarities">Rarities</span>
+                                <img src="images/icons/rar-3.png">
+                            </div>
+                            <div class="ic-features-more-item wow fadeInUp" data-wow-delay=".1s" data-bs-toggle="tooltip" title="Legend">
+                                <span class="ic-f-rarities">Rarities</span>
+                                <img src="images/icons/rar-4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ic-section ic-game-flow pt-5" id="ICGameFlow">
+            <div class="container">
+                <div class="ic-section-title text-center">
+                    <h1 class="wow fadeInUp">FLOW IN GAME</h1>
+                </div>
+                <div class="row gx-xl-4 gx-md-5 gy-md-3 mt-5">
+                    <div class="col-xl-3 col-md-6 mt-5 mt-md-0">
+                        <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
+                            <div class="ic-f-item">
+                                <img src="images/flow/b5.png" alt="P2E - Play To Earn">
+                            </div>
+                            <div class="ic-f-item-flow-title">Personalized Character</div>
+                            <div class="ic-f-item-flow-desc">
+                                <b class="ic-text-primary">Enter and play</b>&nbsp;to create your Warrior
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mt-5 mt-md-0">
+                        <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
+                            <div class="ic-f-item">
+                                <img src="images/flow/b2.png" alt="NFT Warrior">
+                            </div>
+                            <div class="ic-f-item-flow-title">NFT Warrior</div>
+                            <div class="ic-f-item-flow-desc">
+                                <b class="text-danger">Keep playing</b>&nbsp;to earn coinsand NFT Warrior
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mt-5 mt-xl-0">
+                        <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
+                            <div class="ic-f-item">
+                                <img src="images/flow/b6.png" alt="Upgrade NFT Warrior Rare -> Epic -> Legend">
+                            </div>
+                            <div class="ic-f-item-flow-title">Upgrade Rare -> Epic -> Legend</div>
+                            <div class="ic-f-item-flow-desc">
+                                <b class="ic-text-primary">Summon</b>&nbsp;your WARRIOR (many levels)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 mt-5 mt-xl-0">
+                        <div class="ic-f-item-flow wow fadeInUp" data-wow-delay=".1s">
+                            <div class="ic-f-item">
+                                <img src="images/flow/b4.png" alt="P2E - Play to Earn">
+                            </div>
+                            <div class="ic-f-item-flow-title">P2E - Play to Earn</div>
+                            <div class="ic-f-item-flow-desc">
+                                <b class="text-danger">Keep playing</b>&nbsp;to come back and earn coins
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="ic-section ic-section-token-economics" id="WAREToken">
+            <div class="container">
+                <div class="ic-section-title right">
+                    <h1 class="wow fadeInUp">TOKEN ECONOMICS</h1>
+                    <div class="ic-section-sub-title wow fadeIn ls-06em">
+                        <span>#</span>TOKEN
+                    </div>
+                </div>
+                <p class="mt-4 wow fadeInUp fs-20 mb-4 text-end">WARE token is the main in-game currency. It will be used for trading, exchanging, improving the Warriors and their special qualities.</p>
+                <div class="row gx-xl-5 gx-md-5 gy-md-3 mt-5">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="ic-f-item ic-f-item-full-height wow fadeInUp text-center" data-wow-delay=".1s">
+                            <div class="ic-f-item-icon mb-3">
+                                <img src="images/token-economics/1.png" height="150">
+                            </div>
+                            <h4>In-game Currency</h4>
+                            <p>Most items in the game will be payable using F0x tokens.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="ic-f-item ic-f-item-full-height wow fadeInUp text-center" data-wow-delay=".2s">
+                            <div class="ic-f-item-icon mb-3">
+                                <img src="images/token-economics/2.png" height="150">
+                            </div>
+                            <h4>Governance</h4>
+                            <p>Vote for new features and settings of the game to earn special rewards. Lock F0x tokens for a certain time to gain voting power.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="ic-f-item ic-f-item-full-height wow fadeInUp text-center" data-wow-delay=".3s">
+                            <div class="ic-f-item-icon mb-3">
+                                <img src="images/token-economics/3.png" height="150">
+                            </div>
+                            <h4>Staking</h4>
+                            <p>Become part of the game by staking F0x tokens into pools. Different pools will yield different returns such as new items, new rbots, or F0x tokens.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="ic-f-item ic-f-item-full-height wow fadeInUp text-center" data-wow-delay=".4s">
+                            <div class="ic-f-item-icon mb-3">
+                                <img src="images/token-economics/4.png" height="150">
+                            </div>
+                            <h4>Play 2 Earn</h4>
+                            <p>Simply playing can also get you F0x tokens via mission and social mining.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-
-      <section class="ic-section ic-teams pb-0" id="ICTeams">
-        <div class="container">
-          <div class="ic-section-title">
-            <h1 class="wow fadeInUp">OUR TEAM</h1>
-            <div class="ic-section-sub-title wow fadeIn ls-06em">
-              <span>#</span>Team
-            </div>
-          </div>
-          <p class="mt-4">
-            Warena NFT Metaverse game team comes from all over around the world.
-            <br />They have many years of experience and expertise in the
-            working fields.
-          </p>
-          <div class="row mt-5 gx-xl-5 gx-lg-4 gx-md-5 gy-md-3">
-            <div class="col-lg-3 md-6">
-              <a href="#" class="ic-team">
-                <div class="ic-team-inner">
-                  <div class="ic-team-avatar">
-                    <img
-                      src="images/partners/p-0.png"
-                      style="height: 80px"
-                      alt="Name"
-                    />
-                  </div>
-                  <div class="ic-team-name">D2M Studios</div>
-                  <div class="ic-team-title">Game Studios/ CEO</div>
+        <section class="ic-section ic-roadmap pb-0" id="ICRoadmap">
+            <div class="container">
+                <div class="ic-section-title center">
+                    <h1 class="wow fadeInUp">ROADMAP</h1>
                 </div>
-              </a>
-            </div>
-            <div class="col-lg-3 md-6">
-              <a href="#" class="ic-team">
-                <div class="ic-team-inner">
-                  <div class="ic-team-avatar">
-                    <img
-                      src="images/partners/p-2.png"
-                      style="height: 80px"
-                      alt="Name"
-                    />
-                  </div>
-                  <div class="ic-team-name">Xbean</div>
-                  <div class="ic-team-title">Former Xbean Team</div>
+                <p class="wow fadeInUp mt-4 text-center fs-20" data-wow-delay=".1s">Warena brings traditional game experiences, play to earn and Defi to NFT collectibles.</p>
+                <div class="ic-roadmap-content pt-4">
+                    <div class="roadmap-all">
+                        <div class="roadmap-wrap roadmap-wrap-s1 mb-0">
+                            <div class="row no-gutters mt-5">
+                                <div class="col-lg">
+                                    <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
+                                        <div class="roadmap-step roadmap-step-s1">
+                                            <div class="roadmap-head roadmap-head-s1">
+                                                <span class="roadmap-time roadmap-time-s1">Q1, Q2-2021</span>
+                                                <span class="roadmap-title roadmap-title-s1">Prepare and planning</span>
+                                            </div>
+                                            <ul class="roadmap-step-list-s1">
+                                                <li>Verify ideals, start designing and building the Warena games</li>
+                                                <li>Connect with advisors and prepare for official plans</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
+                                        <div class="roadmap-step roadmap-step-s1">
+                                            <div class="roadmap-head roadmap-head-s1">
+                                                <span class="roadmap-phase">Phase 1 - Survival</span>
+                                                <span class="roadmap-time roadmap-time-s1">Q3-2021</span>
+                                                <span class="roadmap-title roadmap-title-s1">Launch Version 0</span>
+                                            </div>
+                                            <ul class="roadmap-step-list-s1">
+                                                <li>Introduce Marketplace & NFT Items (WARE Token)</li>
+                                                <li>Release races: Human and Machine Warrior with role Fighter</li>
+                                                <li>Offer PvE & Async PvP</li>
+                                                <li>Launch on the web</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="roadmap roadmap-s1 roadmap-done text-lg-center">
+                                        <div class="roadmap-step roadmap-step-s1">
+                                            <div class="roadmap-head roadmap-head-s1">
+                                                <span class="roadmap-time roadmap-time-s1">Q4-2021</span>
+                                                <span class="roadmap-title roadmap-title-s1">Launch Version 1</span>
+                                            </div>
+                                            <ul class="roadmap-step-list-s1">
+                                                <li>Add Tournaments</li>
+                                                <li>Improve Arena feature</li>
+                                                <li>Async PVP Arena at 10-20 users</li>
+                                                <li>Release 4 elements for warriors</li>
+                                                <li>Launch on mobile</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="roadmap roadmap-s1 roadmap-current text-lg-center">
+                                        <div class="roadmap-step roadmap-step-s1">
+                                            <div class="roadmap-head roadmap-head-s1">
+                                                <span class="roadmap-time roadmap-time-s1">Q1-2022</span>
+                                                <span class="roadmap-title roadmap-title-s1">Launch Version 2</span>
+                                            </div>
+                                            <ul class="roadmap-step-list-s1">
+                                                <li>Release roles: Tanker, Fighter, Archer, Mage, Supporter for warrior</li>
+                                                <li>Presale Land for Land Battle</li>
+                                                <li>Release 6 elements for warriors</li>
+                                                <li>Add new PVE gameplay</li>
+                                                <li>Create 3D characters</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roadmap-wrap roadmap-wrap-s1 mb-0">
+                            <div class="row flex-row-reverse no-gutters">
+                                <div class="col-lg">
+                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                        <div class="roadmap-step roadmap-step-s1">
+                                            <div class="roadmap-head roadmap-head-s1">
+                                                <span class="roadmap-phase text-danger">Phase2 - Metaverse</span>
+                                                <span class="roadmap-time roadmap-time-s1">Q2-2022</span>
+                                                <span class="roadmap-title roadmap-title-s1">Launch Version 1</span>
+                                            </div>
+                                            <ul class="roadmap-step-list-s1">
+                                                <li>Release roles: Tanker, Fighter, Archer, Mage, Supporter for human</li>
+                                                <li>Release 4 elements for humans</li>
+                                                <li>Introducing RENA Token</li>
+                                                <li>Add new PVP gameplay(synchronize)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                        <div class="roadmap-step roadmap-step-s1">
+                                            <div class="roadmap-head roadmap-head-s1">
+                                                <span class="roadmap-time roadmap-time-s1">Q3-2022</span>
+                                                <span class="roadmap-title roadmap-title-s1">Launch Version 2</span>
+                                            </div>
+                                            <ul class="roadmap-step-list-s1">
+                                                <li>Release full 6 elements for humans</li>
+                                                <li>Add Multi-Dungeons Feature</li>
+                                                <li>Introducing Map on phase 3 with elements land</li>
+                                                <li>Presale races: Demon, Dragon, Elf, Angel</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                        <div class="roadmap-step roadmap-step-s1">
+                                            <div class="roadmap-head roadmap-head-s1">
+                                                <span class="roadmap-time roadmap-time-s1">Q4-2022</span>
+                                                <span class="roadmap-title roadmap-title-s1">Launch Version 3</span>
+                                            </div>
+                                            <ul class="roadmap-step-list-s1">
+                                                <li>Release races: Dragon, Elf with full roles and elements</li>
+                                                <li>Add a new gameplay to have players build and protect on their land</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roadmap-wrap roadmap-wrap-s1 mb-0">
+                            <div class="row no-gutters">
+                                <div class="col-lg">
+                                    <div class="roadmap roadmap-s1 text-lg-center">
+                                        <div class="roadmap-step roadmap-step-s1">
+                                            <div class="roadmap-head roadmap-head-s1">
+                                                <span class="roadmap-time roadmap-time-s1">Q1-2023</span>
+                                                <span class="roadmap-title roadmap-title-s1">Launch Version 4</span>
+                                            </div>
+                                            <ul class="roadmap-step-list-s1">
+                                                <li>Add feature allow allows players to invade each other</li>
+                                                <li>View AR your warriors</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </a>
             </div>
-            <div class="col-lg-3 md-6">
-              <a href="#" class="ic-team">
-                <div class="ic-team-inner">
-                  <div class="ic-team-avatar">
-                    <h1 style="color: white; padding: 15px 0px">NCC.ASIA</h1>
-                  </div>
-                  <div class="ic-team-name">NCC Asia</div>
-                  <div class="ic-team-title">Software Develoment Agency</div>
+        </section>
+        <section class="ic-section ic-teams pb-0" id="ICTeams">
+            <div class="container">
+                <div class="ic-section-title">
+                    <h1 class="wow fadeInUp">OUR TEAM</h1>
+                    <div class="ic-section-sub-title wow fadeIn ls-06em">
+                        <span>#</span>Team
+                    </div>
                 </div>
-              </a>
-            </div>
-            <div class="col-lg-3 md-6">
-              <a href="#" class="ic-team">
-                <div class="ic-team-inner">
-                  <div class="ic-team-avatar">
-                    <img
-                      src="images/partners/p-1.svg"
-                      style="height: 80px"
-                      alt="Name"
-                    />
-                  </div>
-                  <div class="ic-team-name">GenesisBuilders</div>
-                  <div class="ic-team-title">Incubator & Advisor</div>
+                <p class="mt-4">Warena NFT Metaverse game team comes from all over around the world. <br>They have many years of experience and expertise in the working fields. </p>
+                <div class="row mt-5 gx-xl-5 gx-lg-4 gx-md-5 gy-md-3">
+                    <div class="col-lg-3 md-6">
+                        <a href="#" class="ic-team">
+                            <div class="ic-team-inner">
+                                <div class="ic-team-avatar">
+                                    <img src="images/partners/p-0.png" style="height:80px" alt="Name">
+                                </div>
+                                <div class="ic-team-name">D2M Studios</div>
+                                <div class="ic-team-title">Game Studios/ CEO</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 md-6">
+                        <a href="#" class="ic-team">
+                            <div class="ic-team-inner">
+                                <div class="ic-team-avatar">
+                                    <img src="images/partners/p-2.png" style="height:80px" alt="Name">
+                                </div>
+                                <div class="ic-team-name">Xbean</div>
+                                <div class="ic-team-title">Former Xbean Team</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 md-6">
+                        <a href="#" class="ic-team">
+                            <div class="ic-team-inner">
+                                <div class="ic-team-avatar">
+                                    <h1 style="color:#fff;padding:15px 0">NCC.ASIA</h1>
+                                </div>
+                                <div class="ic-team-name">NCC Asia</div>
+                                <div class="ic-team-title">Software Develoment Agency</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 md-6">
+                        <a href="#" class="ic-team">
+                            <div class="ic-team-inner">
+                                <div class="ic-team-avatar">
+                                    <img src="images/partners/p-1.svg" style="height:80px" alt="Name">
+                                </div>
+                                <div class="ic-team-name">GenesisBuilders</div>
+                                <div class="ic-team-title">Incubator & Advisor</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-              </a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="ic-section ic-partners pb-0" id="ICPartners">
-        <div class="container">
-          <div class="ic-section-title right">
-            <h1 class="wow fadeInUp">OUR Partners</h1>
-            <div class="ic-section-sub-title wow fadeIn ls-0em">
-              <span>#</span>Partner
-            </div>
-          </div>
-          <p class="mt-4 text-end">
-            Our partners have worked with us to deliver ever more innovative,
-            effective and successful projects and programmes <br />and their
-            support has been vital in achieving our Mission and Vision
-          </p>
-          <div class="row justify-content-end mt-5">
-            <!-- <div class="col-md-3 col-6">
-              <a
-                rel="noreferrer"
-                href="#"
-                target="_blank"
-                class="ic-partner"
-                title="Partner 1"
-              >
-                <img
-                  class="w-100"
-                  src="images/partners/p-0.png"
-                  alt="Partner 1"
-                />
-              </a>
-            </div> -->
-            <div class="col-md-3 col-6">
-              <a
-                rel="noreferrer"
-                href="#"
-                target="_blank"
-                class="ic-partner"
-                title="Partner 1"
-              >
-                <img
-                  class="w-100"
-                  src="images/partners/p-1.svg"
-                  alt="Partner 1"
-                />
-              </a>
-            </div>
-            <!-- <div class="col-md-3 col-6">
-              <a
-                rel="noreferrer"
-                href="#"
-                target="_blank"
-                class="ic-partner"
-                title="Partner 2"
-              >
-                <img
-                  class="w-100"
-                  src="images/partners/p-2.png"
-                  alt="Partner 2"
-                />
-              </a>
-            </div> -->
-            <div class="col-md-3 col-6">
-              <a
-                rel="noreferrer"
-                href="#"
-                target="_blank"
-                class="ic-partner"
-                title="Partner 3"
-              >
-                <img
-                  class="w-100"
-                  src="images/partners/p-7.png"
-                  alt="Partner 3"
-                />
-              </a>
-            </div>
-            <div class="col-md-3 col-6">
-              <a
-                rel="noreferrer"
-                href="#"
-                target="_blank"
-                class="ic-partner"
-                title="Partner 3"
-              >
-                <img
-                  class="w-100"
-                  src="images/partners/p-8.png"
-                  alt="Partner 3"
-                />
-              </a>
-            </div>
-            <div class="col-md-3 col-6">
-              <a
-                rel="noreferrer"
-                href="#"
-                target="_blank"
-                class="ic-partner"
-                title="Partner 3"
-              >
-                <img
-                  class="w-100"
-                  src="images/partners/p-9.png"
-                  alt="Partner 3"
-                />
-              </a>
-            </div>
-          </div>
-          <hr class="my-5" />
-        </div>
-      </section>
-
-      <section class="ic-section ic-contact pt-5" id="ICContact">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7">
-              <div class="ic-section-title">
-                <h1 class="wow fadeInUp">We'd love to <br />hear from you</h1>
-                <div class="ic-section-sub-title wow fadeIn">
-                  <span>#</span>Keep in touch
+        </section>
+        <section class="ic-section ic-partners pb-0" id="ICPartners">
+            <div class="container">
+                <div class="ic-section-title right">
+                    <h1 class="wow fadeInUp">OUR Partners</h1>
+                    <div class="ic-section-sub-title wow fadeIn ls-0em">
+                        <span>#</span>Partner
+                    </div>
                 </div>
-              </div>
-              <p class="wow fadeInUp mt-4 fs-20">
-                We are always open and we welcome and questions you have for our
-                team. <br />If you wish to get in touch, please fill out the
-                form below. <br />Someone from our team will get back to you
-                shortly.
-              </p>
-              <div class="ic-contact-socials fs-20">
-                <span>Follow us on:</span>
-                <a href="https://t.me/warenaOfficial">
-                  <i class="fab fa-telegram"></i>
-                </a>
-                <!-- <a href="#">
-                  <i class="fab fa-youtube"></i>
-                </a> -->
-                <a href="https://twitter.com/warenaofficial">
-                  <i class="fab fa-twitter-square"></i>
-                </a>
-              </div>
+                <p class="mt-4 text-end">Our partners have worked with us to deliver ever more innovative, effective and successful projects and programmes <br>and their support has been vital in achieving our Mission and Vision </p>
+                <div class="row justify-content-end mt-5">
+                    <div class="col-md-3 col-6">
+                        <a rel="noreferrer" href="#" target="_blank" class="ic-partner" title="Partner 1">
+                            <img class="w-100" src="images/partners/p-1.svg" alt="Partner 1">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a rel="noreferrer" href="#" target="_blank" class="ic-partner" title="Partner 3">
+                            <img class="w-100" src="images/partners/p-7.png" alt="Partner 3">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a rel="noreferrer" href="#" target="_blank" class="ic-partner" title="Partner 3">
+                            <img class="w-100" src="images/partners/p-8.png" alt="Partner 3">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <a rel="noreferrer" href="#" target="_blank" class="ic-partner" title="Partner 3">
+                            <img class="w-100" src="images/partners/p-9.png" alt="Partner 3">
+                        </a>
+                    </div>
+                </div>
+                <hr class="my-5">
             </div>
-            <div class="col-lg-5 ps-lg-5 mt-3 mt-lg-0">
-              <div class="row">
-                <div class="col-md-5">
-                  <div
-                    class="form-group mb-4 wow fadeInUp"
-                    data-wow-delay=".1s"
-                  >
-                    <input
-                      class="form-control"
-                      placeholder="Your name..."
-                      type="text"
-                      required
-                    />
-                    <div class="form-control-border"></div>
-                  </div>
-                </div>
-                <div class="col-md-7">
-                  <div
-                    class="form-group mb-4 wow fadeInUp"
-                    data-wow-delay=".2s"
-                  >
-                    <input
-                      class="form-control"
-                      placeholder="Your email..."
-                      type="email"
-                      required
-                    />
-                    <div class="form-control-border"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group mb-4 wow fadeInUp" data-wow-delay=".3s">
-                <textarea
-                  class="form-control"
-                  rows="5"
-                  placeholder="Your message..."
-                  required
-                ></textarea>
-                <div class="form-control-border"></div>
-              </div>
-              <div class="form-group wow fadeInUp" data-wow-delay=".3s">
-                <button
-                  type="submit"
-                  class="ic-btn ic-btn-v2 ic-btn-outline-primary text-center"
-                >
+        </section>
+        <section class="ic-section ic-contact pt-5" id="ICContact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="ic-section-title">
+                            <h1 class="wow fadeInUp">We'd love to <br>hear from you </h1>
+                            <div class="ic-section-sub-title wow fadeIn">
+                                <span>#</span>Keep in touch
+                            </div>
+                        </div>
+                        <p class="wow fadeInUp mt-4 fs-20">We are always open and we welcome and questions you have for our team. <br>If you wish to get in touch, please fill out the form below. <br>Someone from our team will get back to you shortly. </p>
+                        <div class="ic-contact-socials fs-20">
+                            <span>Follow us on:</span>
+                            <a href="https://t.me/warenaOfficial">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="https://twitter.com/warenaofficial">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 ps-lg-5 mt-3 mt-lg-0">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="form-group mb-4 wow fadeInUp" data-wow-delay=".1s">
+                                    <input class="form-control" placeholder="Your name..." type="text" required>
+                                    <div class="form-control-border"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="form-group mb-4 wow fadeInUp" data-wow-delay=".2s">
+                                    <input class="form-control" placeholder="Your email..." type="email" required>
+                                    <div class="form-control-border"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4 wow fadeInUp" data-wow-delay=".3s">
+                            <textarea class="form-control" rows="5" placeholder="Your message..." required></textarea>
+                            <div class="form-control-border"></div>
+                        </div>
+                        <div class="form-group wow fadeInUp" data-wow-delay=".3s">
+                            <button type="submit" class="ic-btn ic-btn-v2 ic-btn-outline-primary text-center">
                   <span class="ic-btn-text">Send message</span>
                   <div class="ic-btn-hover"></div>
                 </button>
-              </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
     <footer>
-      <div class="container">
-        <div class="row">
-          <div
-            class="
-              col-md-6
-              text-uppercase text-nowrap text-center text-md-start
-            "
-          >
-            &copy;2021 BY <a href="/">WARENA.IO</a>
-          </div>
-          <div
-            class="
-              col
-              md-6
-              text-uppercase text-nowrap text-center text-md-end
-              mt-2 mt-md-0
-            "
-          >
-            All Rights Reserved
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-uppercase text-nowrap text-center text-md-start">&copy;2021 BY <a href="/">WARENA.IO</a>
+                </div>
+                <div class="col md-6 text-uppercase text-nowrap text-center text-md-end mt-2 mt-md-0">All Rights Reserved</div>
+            </div>
         </div>
-      </div>
     </footer>
     <div class="ic-scroll-to-top" id="toTop">
-      <a href="#home" class="ic-btn ic-btn-v2 ic-btn-primary">
-        <span class="ic-btn-text">
+        <a href="#home" class="ic-btn ic-btn-v2 ic-btn-primary">
+            <span class="ic-btn-text">
           <i class="fas fa-arrow-up"></i>
         </span>
-        <div class="ic-btn-hover"></div>
-      </a>
+            <div class="ic-btn-hover"></div>
+        </a>
+    </div>
+    <div class="elements-bar right">
+        <div class="clb-social">
+            <ul class="clb-social-holder">
+                <li class="clb-social-holder-follow">Follow Us</li>
+                <li class="clb-social-holder-dash">–</li>
+                <li>
+                    <a target="_blank" href="https://t.me/warenaofficial" class="telegram">
+                        <i class="fab fa-telegram" title="Telegram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://twitter.com/warenaofficial" class="twitter">
+                        <i class="fab fa-twitter" title="Twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://medium.com/warena" class="medium">
+                        <i class="fab fa-medium-m" title="Medium"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCQnmYpytaibTz6Uw-K6LcxQ" class="youtube">
+                        <i class="fab fa-youtube" title="Youtube"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="plugins/bootstrap-5.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/swiper/swiper-bundle.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/snow.js"></script>
-  </body>
+</body>
+
 </html>
