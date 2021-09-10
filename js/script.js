@@ -1,8 +1,6 @@
 /* PRELOADER */
-$(window).on("load", function() {
-    setTimeout(() => {
-        $("#IC_loading").delay(500).fadeOut("slow");
-    }, 500);
+$(function() {
+    $("#IC_loading").delay(500).fadeOut("slow");
 });
 
 /* SCROLL TO TOP */
