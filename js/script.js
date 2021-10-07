@@ -186,3 +186,10 @@ var tooltipTriggerList = [].slice.call(
 var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl);
 });
+
+/*---------------------------------
+## Top Header
+---------------------------------*/
+$('.top-header .absolute').click(function(){
+  $(this).parents('.top-header').addClass('hidden-note');
+});
