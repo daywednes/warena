@@ -1761,3 +1761,53 @@ footer a {
     background-size: cover;
     z-index: -1;
 }
+
+/*---------------------------------
+## Top Header
+---------------------------------*/
+.top-header {
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  background-color: #11434a;
+  padding: 10px 0 13px;
+}
+
+.top-header p {
+  margin-bottom: 0;
+}
+
+.top-header a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.top-header.hidden-note {
+  display: none;
+}
+
+.top-header .absolute {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  z-index: 222;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.top-header .icon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.top-header .icon svg {
+  width: 2rem;
+  height: 2rem;
+}
