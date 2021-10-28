@@ -643,12 +643,12 @@ h6 {
 .ic-btn-outline-primary,
 .ic-btn-primary {
     color: #fff !important;
-    border-color: #42bed2 !important;
+    border-color: #4196C7 !important;
 }
 
 .ic-btn-outline-primary:hover,
 .ic-btn-primary {
-    background-color: #42bed2 !important;
+    background-color: #4196C7 !important;
 }
 
 .ic-btn-primary .ic-btn-hover {
@@ -661,12 +661,12 @@ h6 {
 .ic-btn-outline-danger,
 .ic-btn-danger {
     color: #fff !important;
-    border-color: #ff3549 !important;
+    border-color: #C74E41 !important;
 }
 
 .ic-btn-outline-danger:hover,
 .ic-btn-danger {
-    background-color: #ff3549 !important;
+    background-color: #C74E41 !important;
 }
 
 .ic-btn-outline-danger::before,
