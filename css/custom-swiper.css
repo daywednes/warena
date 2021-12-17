@@ -1,0 +1,193 @@
+/* Swiper */
+
+.swiper .swiper-container {
+    padding: 1.25rem 0
+}
+
+.swiper-button-style-1 .swiper-slide {
+    z-index: 0;
+    width: 400px;
+    max-width: calc(100% - 40px);
+    opacity: 0;
+    transition: all .2s ease-in-out
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .swiper .swiper-slide {
+        transition: none
+    }
+}
+
+.swiper .swiper-slide:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    bottom: -20px;
+    left: -20px;
+    z-index: -1;
+    background: url(../images/pop.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    opacity: 0;
+    transition: all .2s ease-in-out
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .swiper .swiper-slide:after {
+        transition: none
+    }
+}
+
+.swiper .swiper-slide-active,
+.swiper .swiper-slide-active:after {
+    opacity: 1
+}
+
+.swiper .swiper-slide-shadow-left,
+.swiper .swiper-slide-shadow-right {
+    background: rgba(0, 0, 0, .5)
+}
+
+.swiper .swiper-slide-next,
+.swiper .swiper-slide-prev {
+    opacity: 1
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    width: 4.625rem;
+    height: 4.375rem;
+    font-size: 1rem;
+    transition: all .2s ease-in-out;
+    border-radius: .25em;
+    left: auto;
+    right: auto;
+    display: inline-flex;
+    margin: 0 .5rem;
+    color: #000
+}
+
+@media(max-width:767px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        transition: none
+    }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: inherit;
+    display: none
+}
+
+.swiper-button-next:not(.swiper-button-disabled),
+.swiper-button-prev:not(.swiper-button-disabled) {
+    opacity: 1
+}
+
+.swiper-button-next:not(.swiper-button-disabled):hover,
+.swiper-button-prev:not(.swiper-button-disabled):hover {
+    opacity: 1;
+    filter: brightness(1.2);
+}
+
+.swiper-button-next {
+    right: 0
+}
+
+.swiper-button-prev {
+    left: 0
+}
+
+.swiper-button-style-2 {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-button-style-2 .swiper-slide::after {
+    opacity: 1 !important;
+}
+
+.swiper-button-style-2 .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 800px !important;
+    padding: 10px;
+}
+
+.swiper-button-style-2 .swiper-slide img {
+    display: block;
+    width: 100%;
+    clip-path: polygon(50px 0, calc(100% - 50px) 0, 100% 40px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 40px);
+}
+
+.mySwiper0 .swiper-slide,
+.mySwiper1 .swiper-slide {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.mySwiper0 .swiper-slide {
+    padding: 15px 15px 20px 15px;
+}
+
+.mySwiper0 .swiper-slide:after,
+.mySwiper1 .swiper-slide:after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1 !important;
+}
+
+.mySwiper0 .swiper-slide iframe,
+.mySwiper1 .swiper-slide img {
+    margin: 20px;
+    display: block;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    object-fit: cover;
+    clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 20px);
+}
+
+.mySwiper0 .swiper-slide iframe {
+    margin: 10px 20px 30px 20px;
+}
+
+.mySwiper0 .swiper-pagination {
+    bottom: 25px;
+}
+
+@media(max-width:767px) {
+    .mySwiper1 .swiper-slide img {
+        margin: 0;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+    }
+}
