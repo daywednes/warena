@@ -288,7 +288,7 @@
     white-space: nowrap;
     font-size: 28px;
     line-height: 1;
-    color: #f1d810;
+    color: #FFDC2C;
 }
 
 .roadmap-time {
@@ -647,10 +647,17 @@
     .roadmap-phase {
         left: 0;
         transform: translateX(0);
+        font-size: 24px;
     }
     .roadmap-s1.roadmap-done:before,
     .roadmap-s1.roadmap-done:after,
     .roadmap-s1.roadmap-current:before {
         box-shadow: none;
+    }
+    .roadmap-step-s1:after {
+        top: 30px;
+    }
+    .roadmap-time-s1:before {
+        bottom: -4px;
     }
 }

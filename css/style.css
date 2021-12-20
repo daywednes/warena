@@ -1,3 +1,41 @@
+/* Common */
+
+.w-loading {
+    background-color: #1C242E;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.w-loading img {
+    transition: all ease-in-out 0.3s;
+    transform-origin: center center;
+    animation: loadingEffect 2s infinite;
+}
+
+@keyframes loadingEffect {
+    0% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+}
+
 @media (min-width: 1600px) {
     header .container {
         max-width: 1440px;
@@ -165,7 +203,7 @@ body {
 }
 
 .w-block-title {
-    color: #f1d810;
+    color: #12CEF0;
     font-size: 28px;
     font-weight: bold;
     margin-bottom: -60px;
@@ -181,7 +219,7 @@ body {
     background-position: top left;
     height: 72px;
     display: inline-flex;
-    color: #f1d810;
+    color: #12CEF0;
     align-items: center;
 }
 
@@ -205,7 +243,7 @@ body {
 }
 
 .w-section-title {
-    color: #BBDDEF;
+    color: #FFDC2C;
     font-size: 28px;
     font-weight: bold;
     text-align: center;
@@ -741,7 +779,7 @@ header {
     .roadmap-all .roadmap-wrap:nth-child(2) .row .col-lg:nth-child(2) .roadmap-time-s1:before {
         width: 51px;
         height: 51px;
-        margin-left: -30px;
+        margin-left: -24px;
         margin-top: -34px;
         bottom: -15px !important;
         background-image: url(../images/roadmap-step-lg.png);
@@ -770,14 +808,14 @@ header {
 .roadmap-step-list-s1 .li-update::before {
     left: -53px;
     width: 51px;
-    height: 25px;
+    height: 27px;
     background-image: url(../images/tag-update.png);
 }
 
 .roadmap-step-list-s1 .li-new::before {
     left: -48px;
     width: 40px;
-    height: 25px;
+    height: 27px;
     background-image: url(../images/tag-new.png);
 }
 
@@ -1238,7 +1276,7 @@ footer::after {
     left: 0;
     width: 100%;
     text-align: center;
-    z-index: 9;
+    z-index: 111;
 }
 
 .wr-footer-fixed .wr-footer-cta img {
@@ -1357,7 +1395,7 @@ footer::after {
         margin: 0px auto 20px 30px;
     }
     .roadmap-time-s1 {
-        padding-bottom: 10px;
+        padding-bottom: 0;
         padding-top: 15px;
         padding-left: 20px;
     }
@@ -1369,8 +1407,8 @@ footer::after {
     }
     .roadmap-all .roadmap-wrap:last-child::before {
         top: auto;
-        bottom: -30px;
-        left: -44px;
+        bottom: -20px;
+        left: -40px;
         right: auto;
     }
 }

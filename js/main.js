@@ -1,4 +1,9 @@
 (function($) {
+
+    window.setTimeout(() => {
+        $('#w_loading').fadeOut(500);
+    }, 500)
+
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)

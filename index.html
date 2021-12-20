@@ -15,21 +15,21 @@
 
     <title>Warena</title>
     <link rel="icon" href="favicon.ico" />
-    <meta name="description"
-        content="Engage in thrilling action-survival gameplay throughout two release phases. Players will battle it out in PvE and PvP content using highly personalized warriors, participate in tournaments and be able to collect NFTs at the same time" />
+    <meta name="description" content="Engage in thrilling action-survival gameplay throughout two release phases. Players will battle it out in PvE and PvP content using highly personalized warriors, participate in tournaments and be able to collect NFTs at the same time"
+    />
     <meta property="og:title" content="Warena - Play-to-Earn, Metaverse, Personalization, NFT gaming" />
-    <meta property="og:description"
-        content="Engage in thrilling action-survival gameplay throughout two release phases. Players will battle it out in PvE and PvP content using highly personalized warriors, participate in tournaments and be able to collect NFTs at the same time" />
+    <meta property="og:description" content="Engage in thrilling action-survival gameplay throughout two release phases. Players will battle it out in PvE and PvP content using highly personalized warriors, participate in tournaments and be able to collect NFTs at the same time"
+    />
     <meta property="og:image" content="wr-preview.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Warena - Play-to-Earn, Metaverse, Personalization, NFT gaming" />
-    <meta name="twitter:description"
-        content="Engage in thrilling action-survival gameplay throughout two release phases. Players will battle it out in PvE and PvP content using highly personalized warriors, participate in tournaments and be able to collect NFTs at the same time" />
+    <meta name="twitter:description" content="Engage in thrilling action-survival gameplay throughout two release phases. Players will battle it out in PvE and PvP content using highly personalized warriors, participate in tournaments and be able to collect NFTs at the same time"
+    />
 
     <!-- Google Tag Manager -->
     <script>
-        (function (w, d, s, l, i) {
+        (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
                 'gtm.start': new Date().getTime(),
@@ -51,6 +51,10 @@
 </head>
 
 <body>
+    <div class="w-loading" id="w_loading">
+        <img src="images/logo.png" alt="loading..." height="80">
+    </div>
+
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4M8T2V" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
@@ -61,9 +65,7 @@
                     <a class="w-navbar-brand navbar-brand" href="#">
                         <img height="70" src="images/logo.png" />
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -73,37 +75,29 @@
                                     Us</a>
                             </li>
                             <li class="nav-item">
-                                <a target="_blank" class="nav-link"
-                                    href="https://marketplace.warena.io/">Marketplace</a>
+                                <a target="_blank" class="nav-link" href="https://marketplace.warena.io/">Marketplace</a>
                             </li>
                             <!-- <li class="nav-item">
                                 <a class="nav-link" href="#">DAO</a>
                             </li> -->
                             <li class="nav-item">
-                                <a target="_blank" class="nav-link"
-                                    href="https://warena.gitbook.io/warena/marketplace/events">Events</a>
+                                <a target="_blank" class="nav-link" href="https://warena.gitbook.io/warena/marketplace/events">Events</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     More
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <li><a target="_blank" class="dropdown-item"
-                                            href="https://warena.gitbook.io/warena/">Whitepaper</a>
+                                    <li><a target="_blank" class="dropdown-item" href="https://warena.gitbook.io/warena/">Whitepaper</a>
                                     </li>
-                                    <li><a target="_blank" class="dropdown-item"
-                                            href="https://warena.gitbook.io/warena/game-story">Game
+                                    <li><a target="_blank" class="dropdown-item" href="https://warena.gitbook.io/warena/game-story">Game
                                             Story</a></li>
-                                    <li><a target="_blank" class="dropdown-item"
-                                            href="https://warena.gitbook.io/warena/token-economics/warena-token">WARE &
+                                    <li><a target="_blank" class="dropdown-item" href="https://warena.gitbook.io/warena/token-economics/warena-token">WARE &
                                             RENA</a></li>
                                     <!-- <li><a class="dropdown-item" href="#">Staking</a></li> -->
-                                    <li><a target="_blank" class="dropdown-item"
-                                            href="https://warena.gitbook.io/warena/team-and-backers/team">Team &
+                                    <li><a target="_blank" class="dropdown-item" href="https://warena.gitbook.io/warena/team-and-backers/team">Team &
                                             Advisors</a></li>
-                                    <li><a target="_blank" class="dropdown-item"
-                                            href="https://warena.gitbook.io/warena/others/news">News</a></li>
+                                    <li><a target="_blank" class="dropdown-item" href="https://warena.gitbook.io/warena/others/news">News</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item nav-item-play">
@@ -146,34 +140,22 @@
                                         <div class="swiper mySwiper0">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
-                                                    <iframe class="img-fluid w-100" style="height: 400px;"
-                                                        src="https://www.youtube.com/embed/XcQc03noH5s?autoplay=0&enablejsapi=1"
-                                                        frameborder="0" allow="autoplay"></iframe>
+                                                    <iframe class="img-fluid w-100" style="height: 400px;" src="https://www.youtube.com/embed/XcQc03noH5s?autoplay=0&enablejsapi=1" frameborder="0" allow="autoplay"></iframe>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <iframe class="img-fluid w-100" style="height: 400px;"
-                                                        src="https://www.youtube.com/embed/TBlOoTgiuxE?autoplay=0&enablejsapi=1"
-                                                        frameborder="0" allow="autoplay"></iframe>
+                                                    <iframe class="img-fluid w-100" style="height: 400px;" src="https://www.youtube.com/embed/TBlOoTgiuxE?autoplay=0&enablejsapi=1" frameborder="0" allow="autoplay"></iframe>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <iframe class="img-fluid w-100" style="height: 400px;"
-                                                        src="https://www.youtube.com/embed/62B6dL3Iu6M?autoplay=0&enablejsapi=1"
-                                                        frameborder="0" allow="autoplay"></iframe>
+                                                    <iframe class="img-fluid w-100" style="height: 400px;" src="https://www.youtube.com/embed/62B6dL3Iu6M?autoplay=0&enablejsapi=1" frameborder="0" allow="autoplay"></iframe>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <iframe class="img-fluid w-100" style="height: 400px;"
-                                                        src="https://www.youtube.com/embed/lM_IIYglD_I?autoplay=0&enablejsapi=1"
-                                                        frameborder="0" allow="autoplay"></iframe>
+                                                    <iframe class="img-fluid w-100" style="height: 400px;" src="https://www.youtube.com/embed/lM_IIYglD_I?autoplay=0&enablejsapi=1" frameborder="0" allow="autoplay"></iframe>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <iframe class="img-fluid w-100" style="height: 400px;"
-                                                        src="https://www.youtube.com/embed/KiWuG286sEo?autoplay=0&enablejsapi=1"
-                                                        frameborder="0" allow="autoplay"></iframe>
+                                                    <iframe class="img-fluid w-100" style="height: 400px;" src="https://www.youtube.com/embed/KiWuG286sEo?autoplay=0&enablejsapi=1" frameborder="0" allow="autoplay"></iframe>
                                                 </div>
                                                 <div class="swiper-slide">
-                                                    <iframe class="img-fluid w-100" style="height: 400px;"
-                                                        src="https://www.youtube.com/embed/TlscNQr85Ww?autoplay=0&enablejsapi=1"
-                                                        frameborder="0" allow="autoplay"></iframe>
+                                                    <iframe class="img-fluid w-100" style="height: 400px;" src="https://www.youtube.com/embed/TlscNQr85Ww?autoplay=0&enablejsapi=1" frameborder="0" allow="autoplay"></iframe>
                                                 </div>
                                             </div>
                                             <div class="swiper-pagination"></div>
@@ -252,8 +234,7 @@
             </div>
 
             <div class="d-none d-lg-block">
-                <img src="images/bg-footer-btn.png"
-                    style="width:calc(100% + 180px);margin-left: -90px;margin-top: -120px;z-index: -1;position: relative;" />
+                <img src="images/bg-footer-btn.png" style="width:calc(100% + 180px);margin-left: -90px;margin-top: -120px;z-index: -1;position: relative;" />
             </div>
         </div>
     </section>
@@ -267,9 +248,7 @@
                     </div>
                     <div class="w-ups-top-center text-center mb-5">
                         <h2 class="w-section-title text-uppercase">Keep on gaming and see you in the Metaverse!</h2>
-                        <p>With the vision of bringing blockchain game to the mass-adoption, Warena is the world's first
-                            cross-over Play-to-earn Game that allows you to play, earn and live in a cross metaverse
-                            using your personalized NFT character.</p>
+                        <p>With the vision of bringing blockchain game to the mass-adoption, Warena is the world's first cross-over Play-to-earn Game that allows you to play, earn and live in a cross metaverse using your personalized NFT character.</p>
                     </div>
                     <div class="mt-5 pt-3 d-none d-lg-block">
                         <img src="images/pop3.png" />
@@ -314,8 +293,7 @@
                                             <img src="images/personalized-nft.png" class="w-100" />
                                         </div>
                                         <div class="wr-usp-description text-center mt-3">
-                                            The feature is created and powered by AI allowing players to personalized
-                                            their NFT warriors
+                                            The feature is created and powered by AI allowing players to personalized their NFT warriors
                                         </div>
                                     </div>
                                 </div>
@@ -381,8 +359,7 @@
             <div class="text-center mb-3">
                 <img class="w-partner-title-image" src="images/roadmap-title.png" />
             </div>
-            <p class="text-center" style="font-size: 20px;">Warena brings traditional game experiences, Play-to-earn and
-                Defi to NFT collectibles.</p>
+            <p class="text-center" style="font-size: 20px;">Warena brings traditional game experiences, Play-to-earn and Defi to NFT collectibles.</p>
             <div class="ic-roadmap-content pt-4">
                 <div class="roadmap-all">
                     <div class="roadmap-wrap roadmap-wrap-s1 mb-0">
@@ -396,8 +373,7 @@
                                         <div class="w-roadmap-item">
                                             <div class="roadmap-title roadmap-title-s1">Prepare and planning</div>
                                             <ul class="roadmap-step-list-s1">
-                                                <li class="li-tick">Verify ideals, start designing and building the
-                                                    Warena games</li>
+                                                <li class="li-tick">Verify ideals, start designing and building the Warena games</li>
                                                 <li class="li-tick">Connect with advisors and prepare for official plans
                                                 </li>
                                             </ul>
@@ -417,8 +393,8 @@
                                             <ul class="roadmap-step-list-s1">
                                                 <li class="li-tick">Introduce Marketplace &amp; NFT Items</li>
                                                 <li class="li-tick">Listing RENA</li>
-                                                <li class="li-tick">Release races: Human and Machine Warrior with role
-                                                    Fighter</li>
+                                                <li class="li-tick">Release races: Human and Machine Warrior with role Fighter
+                                                </li>
                                                 <li class="li-tick">Release PvE Feature</li>
                                                 <li class="li-tick">Launch on web</li>
                                             </ul>
@@ -440,8 +416,7 @@
                                                 <li class="li-tick">Launch on mobile</li>
                                                 <li class="li-new">Release Challenge mode - For earning Challenge point
                                                 </li>
-                                                <li class="li-new">Challenge ranking - Main ranking for earning more
-                                                    WARE
+                                                <li class="li-new">Challenge ranking - Main ranking for earning more WARE
                                                 </li>
                                                 <li class="li-new">Quest system - For daily WARE earning</li>
                                             </ul>
@@ -514,8 +489,7 @@
                                                 <li>• Beta test for Survival gameplay</li>
                                                 <li>• Alpha and Beta test for Farming gameplay mode</li>
                                                 <li>• Apply tokenomics to Farming mode.</li>
-                                                <li>• 3D gameplay items on Marketplace: NFTs, Ticket, Production
-                                                    House,..
+                                                <li>• 3D gameplay items on Marketplace: NFTs, Ticket, Production House,..
                                                 </li>
                                             </ul>
                                         </div>
@@ -584,130 +558,109 @@
             <div class="w-partner-content mx-xl-5">
                 <div class="row">
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://genesisbuilders.fund/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Genesis builders">
+                        <a target="_blank" href="https://genesisbuilders.fund/" class="w-partner-logo" data-bs-toggle="tooltip" title="Genesis builders">
                             <img src="images/partners/p1.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://www.animocabrands.com/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Animoca Brands">
+                        <a target="_blank" href="https://www.animocabrands.com/" class="w-partner-logo" data-bs-toggle="tooltip" title="Animoca Brands">
                             <img src="images/partners/p2.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://www.binance.org/en" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Binance">
+                        <a target="_blank" href="https://www.binance.org/en" class="w-partner-logo" data-bs-toggle="tooltip" title="Binance">
                             <img src="images/partners/p3.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://www.polygon.com/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Polygon">
+                        <a target="_blank" href="https://www.polygon.com/" class="w-partner-logo" data-bs-toggle="tooltip" title="Polygon">
                             <img src="images/partners/p4.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://www.illuvium.io/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Illuvium">
+                        <a target="_blank" href="https://www.illuvium.io/" class="w-partner-logo" data-bs-toggle="tooltip" title="Illuvium">
                             <img src="images/partners/p5.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://daomaker.com/" class="w-partner-logo" data-bs-toggle="tooltip"
-                            title="DAO Maker">
+                        <a target="_blank" href="https://daomaker.com/" class="w-partner-logo" data-bs-toggle="tooltip" title="DAO Maker">
                             <img src="images/partners/p6.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://momentum6.com/" class="w-partner-logo" data-bs-toggle="tooltip"
-                            title="Momentum 6">
+                        <a target="_blank" href="https://momentum6.com/" class="w-partner-logo" data-bs-toggle="tooltip" title="Momentum 6">
                             <img src="images/partners/p7.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://paidnetwork.com/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Paid Network">
+                        <a target="_blank" href="https://paidnetwork.com/" class="w-partner-logo" data-bs-toggle="tooltip" title="Paid Network">
                             <img src="images/partners/p8.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://redkite.polkafoundry.com/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Redkite">
+                        <a target="_blank" href="https://redkite.polkafoundry.com/" class="w-partner-logo" data-bs-toggle="tooltip" title="Redkite">
                             <img src="images/partners/p9.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://hub.gamefi.org/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="GameFI">
+                        <a target="_blank" href="https://hub.gamefi.org/" class="w-partner-logo" data-bs-toggle="tooltip" title="GameFI">
                             <img src="images/partners/p10.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://master.ventures/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Master Ventures">
+                        <a target="_blank" href="https://master.ventures/" class="w-partner-logo" data-bs-toggle="tooltip" title="Master Ventures">
                             <img src="images/partners/p11.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://kyros.ventures/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Kyros Ventures">
+                        <a target="_blank" href="https://kyros.ventures/" class="w-partner-logo" data-bs-toggle="tooltip" title="Kyros Ventures">
                             <img src="images/partners/p12.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://www.rebaked.com/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Rebaked">
+                        <a target="_blank" href="https://www.rebaked.com/" class="w-partner-logo" data-bs-toggle="tooltip" title="Rebaked">
                             <img src="images/partners/p13.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://clovers.ventures/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Clovers Ventures">
+                        <a target="_blank" href="https://clovers.ventures/" class="w-partner-logo" data-bs-toggle="tooltip" title="Clovers Ventures">
                             <img src="images/partners/p14.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://vietnamtradecoin.com/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Vietnam Tradecoin">
+                        <a target="_blank" href="https://vietnamtradecoin.com/" class="w-partner-logo" data-bs-toggle="tooltip" title="Vietnam Tradecoin">
                             <img src="images/partners/p15.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://dorafactory.org/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Dora Factory">
+                        <a target="_blank" href="https://dorafactory.org/" class="w-partner-logo" data-bs-toggle="tooltip" title="Dora Factory">
                             <img src="images/partners/p16.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://ncc.asia/" class="w-partner-logo" data-bs-toggle="tooltip"
-                            title="Ncc asia">
+                        <a target="_blank" href="https://ncc.asia/" class="w-partner-logo" data-bs-toggle="tooltip" title="Ncc asia">
                             <img src="images/partners/p17.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://www.d2mstudio.com/" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="D2M studio">
+                        <a target="_blank" href="https://www.d2mstudio.com/" class="w-partner-logo" data-bs-toggle="tooltip" title="D2M studio">
                             <img src="images/partners/p18.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://twitter.com/InfinityGrCPT" class="w-partner-logo"
-                            data-bs-toggle="tooltip" title="Infinity Capital">
+                        <a target="_blank" href="https://twitter.com/InfinityGrCPT" class="w-partner-logo" data-bs-toggle="tooltip" title="Infinity Capital">
                             <img src="images/partners/p19.png" />
                         </a>
                     </div>
                     <div class="col-md-3 col-6">
-                        <a target="_blank" href="https://icetea.io/" class="w-partner-logo" data-bs-toggle="tooltip"
-                            title="IceteaLabs">
+                        <a target="_blank" href="https://icetea.io/" class="w-partner-logo" data-bs-toggle="tooltip" title="IceteaLabs">
                             <img src="images/partners/p20.png" />
                         </a>
                     </div>
                 </div>
             </div>
             <div class="d-none d-lg-block">
-                <img src="images/bg-footer-btn.png"
-                    style="width:calc(100% + 180px);margin-left: -90px;margin-top: -90px;z-index: -1;position: relative;">
+                <img src="images/bg-footer-btn.png" style="width:calc(100% + 180px);margin-left: -90px;margin-top: -90px;z-index: -1;position: relative;">
             </div>
         </div>
     </section>
@@ -724,9 +677,7 @@
                         <div class="w-card">
                             <div class="w-card-body">
                                 <div class="w-card-content">
-                                    <a target="_blank" rel="noreferrer"
-                                        href="https://assets.website-files.com/5f99eb79d508ca853be5f2e8/615c760ad236afa6b79ee6c5_Warena%20SC%20Audit.pdf"
-                                        class="w-partner-logo">
+                                    <a target="_blank" rel="noreferrer" href="https://assets.website-files.com/5f99eb79d508ca853be5f2e8/615c760ad236afa6b79ee6c5_Warena%20SC%20Audit.pdf" class="w-partner-logo">
                                         <span><img src="images/zokyo.svg" height="60"></span>
                                     </a>
                                 </div>
@@ -744,30 +695,22 @@
                 </h2>
                 <div class="row gx-xl-5 justify-content-center">
                     <div class="col-xl-3 col-lg-3 col-md-4 col-6">
-                        <a data-bs-toggle="tooltip" title="Forbes" target="_blank"
-                            href="https://www.forbes.com/sites/youngjoseph/2021/10/03/metaverse-heats-up-how-axie-infinitys-30b-valuation-led-crypto-game-frenzy/?sh=1c106f965b25"
-                            class="w-partner-logo">
+                        <a data-bs-toggle="tooltip" title="Forbes" target="_blank" href="https://www.forbes.com/sites/youngjoseph/2021/10/03/metaverse-heats-up-how-axie-infinitys-30b-valuation-led-crypto-game-frenzy/?sh=1c106f965b25" class="w-partner-logo">
                             <span><img src="images/m11.png"></span>
                         </a>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-6">
-                        <a data-bs-toggle="tooltip" title="Cointelegraph" target="_blank"
-                            href="https://cointelegraph.com/press-releases/play-to-earn-metaverse-game-warena-raises-15-million-from-top-blockchain-investors"
-                            class="w-partner-logo">
+                        <a data-bs-toggle="tooltip" title="Cointelegraph" target="_blank" href="https://cointelegraph.com/press-releases/play-to-earn-metaverse-game-warena-raises-15-million-from-top-blockchain-investors" class="w-partner-logo">
                             <span><img src="images/m22.png"></span>
                         </a>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-6">
-                        <a data-bs-toggle="tooltip" title="Business Insider" target="_blank"
-                            href="https://www.businessinsider.in/investment/news/full-list-of-cryptocurrencies-that-hit-new-all-time-highs-this-week/articleshow/87589933.cms"
-                            class="w-partner-logo">
+                        <a data-bs-toggle="tooltip" title="Business Insider" target="_blank" href="https://www.businessinsider.in/investment/news/full-list-of-cryptocurrencies-that-hit-new-all-time-highs-this-week/articleshow/87589933.cms" class="w-partner-logo">
                             <span><img src="images/m33.png"></span>
                         </a>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-6">
-                        <a data-bs-toggle="tooltip" title="News BTC" target="_blank"
-                            href="https://www.newsbtc.com/news/company/warenas-4-day-beta-peaks-at-15000-players/"
-                            class="w-partner-logo">
+                        <a data-bs-toggle="tooltip" title="News BTC" target="_blank" href="https://www.newsbtc.com/news/company/warenas-4-day-beta-peaks-at-15000-players/" class="w-partner-logo">
                             <span><img src="images/m44.png"></span>
                         </a>
                     </div>
@@ -816,8 +759,7 @@
                 </div>
             </div>
             <div class="d-none d-lg-block">
-                <img src="images/bg-footer-btn.png"
-                    style="width:calc(100% + 180px);margin-left: -90px;margin-top: -90px;z-index: -1;position: relative;">
+                <img src="images/bg-footer-btn.png" style="width:calc(100% + 180px);margin-left: -90px;margin-top: -90px;z-index: -1;position: relative;">
             </div>
         </div>
     </section>
@@ -855,8 +797,7 @@
                                 <a href="https://discord.gg/warenaofficial" target="_blank">
                                     <img src="images/socials/discord.png" alt="discord">
                                 </a>
-                                <a href="https://www.youtube.com/channel/UCQnmYpytaibTz6Uw-K6LcxQ?sub_confirmation=1"
-                                    target="_blank">
+                                <a href="https://www.youtube.com/channel/UCQnmYpytaibTz6Uw-K6LcxQ?sub_confirmation=1" target="_blank">
                                     <img src="images/socials/youtube.png" alt="youtube">
                                 </a>
                             </div>
@@ -916,17 +857,13 @@
                                 </div>
                                 <div class="d-flex align-items-center justify-content-lg-start justify-content-center">
                                     <div id="coingecko-block" style="display: none;">
-                                        <script
-                                            src="https://widgets.coingecko.com/coingecko-coin-price-static-headline-widget.js"></script>
-                                        <coingecko-coin-price-static-headline-widget id="coingecko-price"
-                                            coin-ids="warena" currency="usd" locale="en" background-color="#1c242e">
+                                        <script src="https://widgets.coingecko.com/coingecko-coin-price-static-headline-widget.js"></script>
+                                        <coingecko-coin-price-static-headline-widget id="coingecko-price" coin-ids="warena" currency="usd" locale="en" background-color="#1c242e">
                                         </coingecko-coin-price-static-headline-widget>
                                     </div>
                                     <div id="coingecko-na">
-                                        <div
-                                            class="d-flex align-items-center justify-content-lg-start justify-content-center">
-                                            <img height="45"
-                                                src="https://s2.coinmarketcap.com/static/img/coins/64x64/12307.png">
+                                        <div class="d-flex align-items-center justify-content-lg-start justify-content-center">
+                                            <img height="45" src="https://s2.coinmarketcap.com/static/img/coins/64x64/12307.png">
                                             <div class="ms-2" style="line-height: 1.1;">
                                                 <h5 class="text-white mb-0"><b></b></h5>
                                                 <div class="text-success"><b><small></small></b></div>
@@ -937,21 +874,16 @@
                                 <div class="mt-1">
                                     <div><small>Available on</small></div>
                                     <div class="wr-footer-markets justify-content-lg-start justify-content-center">
-                                        <a href="https://pancakeswap.finance/swap?outputCurrency=0xa9D75Cc3405F0450955050C520843f99Aff8749D"
-                                            data-bs-toggle="tooltip" title="Pancakeswap" target="_blank"
-                                            rel="noreferrer">
+                                        <a href="https://pancakeswap.finance/swap?outputCurrency=0xa9D75Cc3405F0450955050C520843f99Aff8749D" data-bs-toggle="tooltip" title="Pancakeswap" target="_blank" rel="noreferrer">
                                             <img src="images/market/pancakeswap.svg" />
                                         </a>
-                                        <a href="https://exchange.coin98.com/pancakeswap/0xa9D75Cc3405F0450955050C520843f99Aff8749D"
-                                            data-bs-toggle="tooltip" title="C98" target="_blank" rel="noreferrer">
+                                        <a href="https://exchange.coin98.com/pancakeswap/0xa9D75Cc3405F0450955050C520843f99Aff8749D" data-bs-toggle="tooltip" title="C98" target="_blank" rel="noreferrer">
                                             <img src="images/market/c98.svg" />
                                         </a>
-                                        <a href="https://www.gate.io/trade/RENA_USDT" data-bs-toggle="tooltip"
-                                            title="Gate" target="_blank" rel="noreferrer">
+                                        <a href="https://www.gate.io/trade/RENA_USDT" data-bs-toggle="tooltip" title="Gate" target="_blank" rel="noreferrer">
                                             <img src="images/market/gate-io.svg" />
                                         </a>
-                                        <a href="https://www.mexc.com/exchange/RENA_USDT" data-bs-toggle="tooltip"
-                                            title="MEXC" target="_blank" rel="noreferrer">
+                                        <a href="https://www.mexc.com/exchange/RENA_USDT" data-bs-toggle="tooltip" title="MEXC" target="_blank" rel="noreferrer">
                                             <img src="images/market/mexc.svg" />
                                         </a>
 
@@ -988,20 +920,16 @@
                                 <h4>ABOUT WARENA</h4>
                                 <ul>
                                     <li>
-                                        <a href="https://warena.gitbook.io/warena/" target="_blank"
-                                            rel="noreferrer">Whitepaper</a>
+                                        <a href="https://warena.gitbook.io/warena/" target="_blank" rel="noreferrer">Whitepaper</a>
                                     </li>
                                     <li>
-                                        <a href="https://warena.gitbook.io/warena/token-economics/warena-token"
-                                            target="_blank" rel="noreferrer">Tokenomics</a>
+                                        <a href="https://warena.gitbook.io/warena/token-economics/warena-token" target="_blank" rel="noreferrer">Tokenomics</a>
                                     </li>
                                     <li>
-                                        <a href="https://marketplace.warena.io/" target="_blank"
-                                            rel="noreferrer">Marketplace</a>
+                                        <a href="https://marketplace.warena.io/" target="_blank" rel="noreferrer">Marketplace</a>
                                     </li>
                                     <li>
-                                        <a href="https://warena.gitbook.io/warena/GAMEPLAY/phase-1-2d-tower-defence-game/how-to-play"
-                                            target="_blank" rel="noreferrer">How to Play & Earn</a>
+                                        <a href="https://warena.gitbook.io/warena/GAMEPLAY/phase-1-2d-tower-defence-game/how-to-play" target="_blank" rel="noreferrer">How to Play & Earn</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1011,16 +939,13 @@
                                 <h4>CONTACT US</h4>
                                 <ul>
                                     <li>
-                                        <a href="https://warena.gitbook.io/warena/" target="_blank"
-                                            rel="noreferrer">FAQ</a>
+                                        <a href="https://warena.gitbook.io/warena/" target="_blank" rel="noreferrer">FAQ</a>
                                     </li>
                                     <li>
-                                        <a href="https://warena.gitbook.io/warena/team-and-backers/backers-partners"
-                                            target="_blank" rel="noreferrer">Partnership</a>
+                                        <a href="https://warena.gitbook.io/warena/team-and-backers/backers-partners" target="_blank" rel="noreferrer">Partnership</a>
                                     </li>
                                     <li>
-                                        <a href="https://warena.gitbook.io/warena/" target="_blank"
-                                            rel="noreferrer">Customer Support</a>
+                                        <a href="https://warena.gitbook.io/warena/" target="_blank" rel="noreferrer">Customer Support</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1030,20 +955,16 @@
                                 <h4>MORE INFORMATION</h4>
                                 <ul>
                                     <li>
-                                        <a href="https://warena.gitbook.io/warena/" target="_blank"
-                                            rel="noreferrer">Terms of use</a>
+                                        <a href="https://warena.gitbook.io/warena/" target="_blank" rel="noreferrer">Terms of use</a>
                                     </li>
                                     <li>
-                                        <a href="https://warena.gitbook.io/warena/" target="_blank"
-                                            rel="noreferrer">Privacy Policy</a>
+                                        <a href="https://warena.gitbook.io/warena/" target="_blank" rel="noreferrer">Privacy Policy</a>
                                     </li>
                                     <li>
-                                        <a href="https://warena.gitbook.io/warena/hiring/opportunties" target="_blank"
-                                            rel="noreferrer">Careers</a>
+                                        <a href="https://warena.gitbook.io/warena/hiring/opportunties" target="_blank" rel="noreferrer">Careers</a>
                                     </li>
                                     <li>
-                                        <a href="https://teamwarena.medium.com/" target="_blank"
-                                            rel="noreferrer">Blog</a>
+                                        <a href="https://teamwarena.medium.com/" target="_blank" rel="noreferrer">Blog</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1054,8 +975,7 @@
                                 <div class="form-group">
                                     <label class="form-label">Subscribe to our newsletter</label>
                                     <div class="input-group">
-                                        <input type="email" name="your_email" id="your_email" class="form-control"
-                                            placeholder="Your email address" />
+                                        <input type="email" name="your_email" id="your_email" class="form-control" placeholder="Your email address" />
                                         <button type="submit" class="btn btn-warning">
                                             <span>Subscribe</span>
                                         </button>
@@ -1071,6 +991,7 @@
             </div>
         </div>
     </footer>
+
     <div class="wr-footer-fixed">
         <!-- <div class="container">
         <div class="wr-footer-cta">
