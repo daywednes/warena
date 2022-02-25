@@ -1,30 +1,27 @@
 {
-  "version": 2,
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-XSS-Protection",
-          "value": "1; mode=block"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "no-referrer-when-downgrade"
-        },
-        {
-          "key": "Permissions-Policy",
-          "value": "accelerometer=(self), autoplay=(self), camera=(self), cross-origin-isolated=(self), document-domain=(self), encrypted-media=(self), fullscreen=(self), geolocation=(self), gyroscope=(self), magnetometer=(self), microphone=(self), midi=(self), payment=(self), picture-in-picture=(self), publickey-credentials-get=(self), screen-wake-lock=(self), sync-xhr=(self), usb=(self), xr-spatial-tracking=(self), clipboard-read=(self), clipboard-write=(self), hid=(self), serial=(self)"
-        }
-      ]
-    }
-  ],
+    "version": 2,
+    "headers": [{
+        "source": "/(.*)",
+        "headers": [{
+                "key": "X-Content-Type-Options",
+                "value": "nosniff"
+            },
+            {
+                "key": "X-Frame-Options",
+                "value": "DENY"
+            },
+            {
+                "key": "X-XSS-Protection",
+                "value": "1; mode=block"
+            },
+            {
+                "key": "Referrer-Policy",
+                "value": "no-referrer-when-downgrade"
+            },
+            {
+                "key": "Permissions-Policy",
+                "value": "accelerometer=(self), autoplay=(self), camera=(self), cross-origin-isolated=(self), document-domain=(self), encrypted-media=(self), fullscreen=(self), geolocation=(self), gyroscope=(self), magnetometer=(self), microphone=(self), midi=(self), payment=(self), picture-in-picture=(self), publickey-credentials-get=(self), screen-wake-lock=(self), sync-xhr=(self), usb=(self), xr-spatial-tracking=(self), clipboard-read=(self), clipboard-write=(self), hid=(self), serial=(self)"
+            }
+        ]
+    }]
 }
