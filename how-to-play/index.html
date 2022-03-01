@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700&amp;display=swap" />
+    <link rel="stylesheet" href="plugins/fullpage/jquery.fullpage.min.css" />
+    <link rel="stylesheet" href="css/style.css?v=2" />
+
+    <title>Welcome to Warena</title>
+    <link rel="icon" href="favicon.ico" />
+    <meta name="description" content="Engage in thrilling action-survival gameplay throughout two release phases. Players will battle it out in PvE and PvP content using highly personalized warriors, participate in tournaments and be able to collect NFTs at the same time"
+    />
+    <meta property="og:title" content="Warena - Play-to-Earn, Metaverse, Personalization, NFT gaming" />
+    <meta property="og:description" content="Engage in thrilling action-survival gameplay throughout two release phases. Players will battle it out in PvE and PvP content using highly personalized warriors, participate in tournaments and be able to collect NFTs at the same time"
+    />
+    <meta property="og:image" content="wr-preview.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Warena - Play-to-Earn, Metaverse, Personalization, NFT gaming" />
+    <meta name="twitter:description" content="Engage in thrilling action-survival gameplay throughout two release phases. Players will battle it out in PvE and PvP content using highly personalized warriors, participate in tournaments and be able to collect NFTs at the same time"
+    />
+</head>
+
+<body>
+    <div class="w-loading" id="w_loading">
+        <img src="images/logo.png" alt="loading..." height="80">
+    </div>
+    <header>
+        <div class="w-nav">
+            <a class="w-logo" href="https://warena.io/">
+                <img src="images/logo.png" alt="Warena" />
+            </a>
+            <div class="w-navbar">
+                <a href="#started">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.25829 19.1667C9.16166 19.1666 9.06579 19.1496 8.97496 19.1167C8.79974 19.0525 8.65113 18.9314 8.55292 18.7728C8.45471 18.6141 8.41258 18.4271 8.43329 18.2417L9.07495 12.3333H4.16662C4.01523 12.3336 3.86664 12.2925 3.7368 12.2147C3.60696 12.1368 3.50079 12.0251 3.42968 11.8914C3.35857 11.7578 3.32521 11.6073 3.33319 11.4561C3.34117 11.3049 3.39018 11.1588 3.47495 11.0333L10.05 1.2C10.1539 1.04611 10.3064 0.931378 10.483 0.874007C10.6596 0.816636 10.8504 0.819918 11.025 0.883333C11.1928 0.945635 11.3361 1.06032 11.4336 1.21041C11.5312 1.3605 11.5778 1.53801 11.5666 1.71667L10.925 7.66667H15.8333C15.9847 7.66644 16.1333 7.70745 16.2631 7.78531C16.3929 7.86317 16.4991 7.97493 16.5702 8.10858C16.6413 8.24223 16.6747 8.39273 16.6667 8.54391C16.6587 8.69509 16.6097 8.84124 16.525 8.96667L9.94995 18.8C9.87351 18.9131 9.77046 19.0057 9.64986 19.0696C9.52925 19.1335 9.39479 19.1669 9.25829 19.1667Z" fill="#12CEF0"/>
+                    </svg>
+                    <span>Getting Started</span>
+                </a>
+                <a href="https://discord.com/invite/warenaofficial" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.87594 16.6883H14.2465L13.7512 15.0846C13.8247 15.1486 18.0001 18.7276 18.0001 18.7276V3.07252C17.9506 2.0994 17.1128 1.27246 16.0742 1.27246L3.87958 1.27464C2.84172 1.27464 1.99951 2.10304 1.99951 3.07616V14.8875C1.99951 15.9137 2.84027 16.6883 3.87594 16.6883ZM11.5475 5.4057L11.5235 5.41443L11.5322 5.4057H11.5475ZM5.99747 6.32864C7.33061 5.35842 8.56629 5.40497 8.56629 5.40497L8.66593 5.50316C7.0346 5.89226 6.29494 6.62101 6.29494 6.62101C6.37058 6.60501 9.66451 4.70458 13.6559 6.66902C13.6559 6.66902 12.9148 5.98754 11.3838 5.55116L11.5191 5.41806C11.7308 5.41879 12.8508 5.45806 14.0494 6.33446C14.0494 6.33446 15.3905 8.62545 15.3905 11.4401C15.3462 11.3863 14.5585 12.6518 12.5315 12.6954C12.5315 12.6954 12.1882 12.307 11.9439 11.9681C13.1294 11.6277 13.573 10.947 13.573 10.947C11.2653 12.4001 9.24268 12.1732 6.82296 11.1914C6.80041 11.1914 6.79023 11.1812 6.77859 11.1695V11.1652C6.76695 11.1543 6.75677 11.1434 6.73423 11.1434H6.69059C6.54222 11.0459 6.44331 10.9979 6.44331 10.9979C6.44331 10.9979 6.88623 11.6786 8.02445 12.019C7.72553 12.3601 7.42952 12.7478 7.42952 12.7478C5.40327 12.6998 4.66433 11.4343 4.66433 11.4343C4.66433 8.61527 5.99747 6.32864 5.99747 6.32864Z" fill="white"/>
+                        <path d="M11.678 10.5608C12.1951 10.5608 12.6162 10.1244 12.6162 9.58618C12.6162 9.05161 12.1973 8.61523 11.678 8.61523V8.61742C11.163 8.61742 10.7412 9.05234 10.7397 9.59054C10.7397 10.1244 11.1609 10.5608 11.678 10.5608Z" fill="white"/>
+                        <path d="M8.31956 10.5608C8.83667 10.5608 9.25777 10.1244 9.25777 9.58618C9.25777 9.05161 8.83958 8.61523 8.32247 8.61523L8.31956 8.61742C7.80245 8.61742 7.38135 9.05234 7.38135 9.59054C7.38135 10.1244 7.80245 10.5608 8.31956 10.5608Z" fill="white"/>
+                    </svg>
+                    <span>JOIN OUR DISCORD</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="w-step-mobile">
+        <button type="button" class="w-step-button btnPrev">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.96413 9.99991L13.0891 14.1249C13.1687 14.2018 13.2322 14.2937 13.2759 14.3954C13.3196 14.4971 13.3425 14.6064 13.3435 14.7171C13.3445 14.8277 13.3234 14.9375 13.2815 15.0399C13.2396 15.1423 13.1777 15.2353 13.0995 15.3136C13.0212 15.3918 12.9282 15.4537 12.8258 15.4956C12.7233 15.5375 12.6136 15.5586 12.503 15.5576C12.3923 15.5567 12.283 15.5337 12.1813 15.49C12.0796 15.4463 11.9877 15.3828 11.9108 15.3032L7.19663 10.5891C7.0404 10.4328 6.95264 10.2209 6.95264 9.99991C6.95264 9.77894 7.0404 9.56701 7.19663 9.41074L11.9108 4.69657C12.068 4.54477 12.2785 4.46078 12.497 4.46268C12.7155 4.46458 12.9245 4.55222 13.079 4.70672C13.2335 4.86123 13.3211 5.07024 13.323 5.28874C13.3249 5.50724 13.2409 5.71774 13.0891 5.87491L8.96413 9.99991Z" fill="#2D333E"/>
+            </svg>                
+        </button>
+        <div class="w-step-mobile-item w-step-mobile-title" id="Step0">
+            <span class="number">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.40653 15.3332C7.32923 15.3331 7.25253 15.3196 7.17987 15.2932C7.0397 15.2419 6.92081 15.145 6.84224 15.0181C6.76367 14.8912 6.72997 14.7416 6.74653 14.5932L7.25987 9.86657H3.3332C3.21209 9.86675 3.09321 9.83394 2.98934 9.77165C2.88547 9.70937 2.80053 9.61996 2.74365 9.51304C2.68676 9.40612 2.66007 9.28572 2.66645 9.16478C2.67283 9.04383 2.71204 8.92691 2.77987 8.82657L8.03987 0.959902C8.12306 0.836794 8.24499 0.745005 8.3863 0.699108C8.52762 0.653211 8.68021 0.655837 8.81987 0.706569C8.95412 0.756411 9.06875 0.848158 9.1468 0.968229C9.22484 1.0883 9.26215 1.23031 9.2532 1.37324L8.73987 6.13323H12.6665C12.7876 6.13305 12.9065 6.16587 13.0104 6.22815C13.1143 6.29044 13.1992 6.37984 13.2561 6.48676C13.313 6.59368 13.3397 6.71408 13.3333 6.83503C13.3269 6.95597 13.2877 7.07289 13.2199 7.17324L7.95987 15.0399C7.89871 15.1304 7.81627 15.2044 7.71979 15.2556C7.6233 15.3067 7.51573 15.3334 7.40653 15.3332Z" fill="#12CEF0"/>
+                </svg>                    
+            </span>
+            <span class="text">Getting Started</span>
+        </div>
+        <div class="w-step-mobile-item w-step-mobile-title" id="Step1">
+            <span class="number">1</span>
+            <span class="text">Create MetaMask Wallet</span>
+        </div>
+        <div class="w-step-mobile-item w-step-mobile-title" id="Step2">
+            <span class="number">2</span>
+            <span class="text">Account Setup</span>
+        </div>
+        <div class="w-step-mobile-item w-step-mobile-title" id="Step3">
+            <span class="number">3</span>
+            <span class="text">Getting NFT</span>
+        </div>
+        <div class="w-step-mobile-item w-step-mobile-title" id="Step4">
+            <span class="number">4</span>
+            <span class="text">Download & Play</span>
+        </div>
+        <button type="button" class="w-step-button btnNext">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.0948 10.0592L6.96977 5.93423C6.81797 5.77706 6.73397 5.56656 6.73587 5.34806C6.73777 5.12957 6.82541 4.92056 6.97992 4.76605C7.13442 4.61154 7.34343 4.5239 7.56193 4.522C7.78043 4.52011 7.99093 4.6041 8.1481 4.7559L12.8623 9.47007C13.0185 9.62634 13.1063 9.83826 13.1063 10.0592C13.1063 10.2802 13.0185 10.4921 12.8623 10.6484L8.1481 15.3626C7.99093 15.5144 7.78043 15.5984 7.56193 15.5965C7.34343 15.5946 7.13442 15.5069 6.97992 15.3524C6.82541 15.1979 6.73777 14.9889 6.73587 14.7704C6.73397 14.5519 6.81797 14.3414 6.96977 14.1842L11.0948 10.0592Z" fill="#2D333E"/>
+            </svg>                
+        </button>
+    </div>
+
+    <div class="w-fullpage">
+        <main class="section" id="Section0">
+            <div class="container">
+                <div class="w-starter">
+                    <h2 class="w-title">Welcome to the world of Warena!</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-xl-8">
+                            <div class="w-description">
+                                With a vision of bringing blockchain gaming to the masses, the Warena metaverse is a great way to enter the NFT game space, with personalized NFT characters and a decentralized finance zone simulating real economic systems. Start today by playing the
+                                2D survival game and jump into the battle with Warena! <br/> Let's learn how to set up your digital wallet, buy NFTs, and download the game.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-blocks">
+                        <div class="w-block">
+                            <div class="w-block-icon">
+                                <a href="#xstep1" type="button"> <img src="images/step-1.png" alt="" /> </a>
+                            </div>
+                            <div class="w-block-title">1. Create MetaMask Wallet</div>
+                        </div>
+                        <div class="w-block">
+                            <div class="w-block-icon">
+                                <a href="#xstep2" type="button"> <img src="images/step-2.png" alt="" /> </a>
+                            </div>
+                            <div class="w-block-title">2. Account Setup</div>
+                        </div>
+                        <div class="w-block">
+                            <div class="w-block-icon">
+                                <a href="#xstep3" type="button"> <img src="images/step-3.png" alt="" /> </a>
+                            </div>
+                            <div class="w-block-title">3. Getting NFT</div>
+                        </div>
+                        <div class="w-block">
+                            <div class="w-block-icon">
+                                <a href="#xstep4" type="button"> <img src="images/step-4.png" alt="" /> </a>
+                            </div>
+                            <div class="w-block-title">4. Download & Play</div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="#xstep1" type="button" class="w-btn" id="btnGetStarted">
+                            <span>GET STARTED</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-decor" style="top: 60px;right: 0;"><img src="images/decor/main-top-right.svg" alt="" /></div>
+                <div class="w-decor" style="bottom: 0;left: 0;"><img src="images/decor/main-bottom-left.svg" alt="" /></div>
+                <div class="w-decor" style="bottom: 54px;right: 0;"><img src="images/decor/main-bottom-right.svg" alt="" /></div>
+            </div>
+        </main>
+
+        <section class="section" id="Section1">
+            <div class="container">
+                <div class="w-step w-step-1">
+                    <div class="w-step-body">
+                        <div class="w-number active"><span>1</span></div>
+                        <div class="row gx-xl-5">
+                            <div class="col-lg-6">
+                                <div class="w-title">Create Your Own MetaMask</div>
+                                <div class="w-step-content">
+                                    <p>Connect the Binance Smart Chain network to MetaMask:</p>
+                                    <ul>
+                                        <li>In MetaMask, select Settings from the dropdown menu.</li>
+                                        <li>Locate the Networks menu, then choose to Add a network.</li>
+                                        <li>
+                                            <p>Fill in the information as below:</p>
+                                            <ul>
+                                                <li><b>Network Name:</b> Smart Chain</li>
+                                                <li><b>New RPC URL:</b> <a href="https://bsc-dataseed.binance.org/" target="_blank">https://bsc-dataseed.binance.org/</a></li>
+                                                <li><b>ChainID:</b> 56</li>
+                                                <li><b>Symbol:</b> BNB</li>
+                                                <li><b>Block Explorer URL:</b> <a href="https://bscscan.com" target="_blank">https://bscscan.com</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>Hit Save and you're good to go</li>
+                                    </ul>
+
+                                    <div class="w-sub-title">Download & Setup</div>
+                                    <div class="w-download">
+                                        <label>Extension</label>
+                                        <a href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn" target="_blank">
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.64502 3.82987C6.62042 0.367227 12.1376 1.05047 14.1993 5.09555C12.7472 5.09635 10.4743 5.09475 9.243 5.09555C8.35014 5.09555 7.7733 5.07555 7.14926 5.40438C6.41561 5.7908 5.86117 6.50685 5.66836 7.34851L3.64502 3.82987Z" fill="#F44336"/>
+                                            <path d="M6.37109 8.00071C6.37109 9.17439 7.32556 10.1289 8.49844 10.1289C9.67132 10.1289 10.6258 9.17439 10.6258 8.00071C10.6258 6.82702 9.67132 5.87256 8.49844 5.87256C7.32476 5.87176 6.37109 6.82702 6.37109 8.00071Z" fill="#2196F3"/>
+                                            <path d="M9.32315 10.7863C8.12946 11.1407 6.73177 10.7479 5.96691 9.4262C5.38287 8.41813 3.83877 5.72914 3.13792 4.50586C0.68015 8.27252 2.7979 13.4049 7.259 14.2809L9.32315 10.7863Z" fill="#4CAF50"/>
+                                            <path d="M10.4737 5.87141C11.4682 6.79627 11.685 8.29397 11.0113 9.45485C10.5041 10.3301 8.88398 13.0639 8.09912 14.3872C12.6954 14.6704 16.0461 10.1661 14.5324 5.87061L10.4737 5.87141Z" fill="#FFC107"/>
+                                        </svg>
+                                            <span>CHROME</span>
+                                        </a>
+                                        <a href="https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/" target="_blank">
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.6091 4.11182C13.1169 3.46336 12.5132 2.9297 11.8353 2.52327C11.8043 2.50466 11.7641 2.51087 11.7362 2.53568C11.699 2.57291 11.7083 2.63186 11.7486 2.65978C13.0054 3.47578 13.9744 4.7913 14.2004 6.54739C14.6648 10.1154 12.1789 13.094 8.68066 13.1033C4.83574 13.1157 2.49535 9.70899 3.1083 6.64976C3.13925 6.49773 3.12377 6.3488 3.1733 6.20297C3.20115 5.66621 3.40547 4.82229 3.84507 3.95975C3.40237 4.18934 2.83895 4.91537 2.56032 5.58553C2.1579 6.5536 2.0186 7.71089 2.14552 8.8123C2.1548 8.89606 2.1641 8.97674 2.17337 9.0605C2.69037 12.0949 5.32797 14.4033 8.50111 14.397C12.0365 14.3908 14.9155 11.4837 14.8969 7.93734C14.8908 6.50394 14.4109 5.17913 13.6091 4.11182Z" fill="#F393A0"/>
+                                                <path opacity="0.67" d="M13.6091 4.11182C13.1169 3.46336 12.5132 2.9297 11.8353 2.52327C11.8043 2.50466 11.7641 2.51087 11.7362 2.53568C11.699 2.57291 11.7083 2.63186 11.7486 2.65978C13.0054 3.47578 13.9744 4.7913 14.2004 6.54739C14.6648 10.1154 12.1789 13.094 8.68066 13.1033C4.83574 13.1157 2.49535 9.70899 3.1083 6.64976C3.13925 6.49773 3.12377 6.3488 3.1733 6.20297C3.20115 5.66621 3.40547 4.82229 3.84507 3.95975C3.40237 4.18934 2.83895 4.91537 2.56032 5.58553C2.1579 6.5536 2.0186 7.71089 2.14552 8.8123C2.1548 8.89606 2.1641 8.97674 2.17337 9.0605C2.69037 12.0949 5.32797 14.4033 8.50111 14.397C12.0365 14.3908 14.9155 11.4837 14.8969 7.93734C14.8908 6.50394 14.4109 5.17913 13.6091 4.11182Z" fill="url(#paint0_radial_55_146)"/>
+                                                <path d="M13.6091 4.11182C13.1169 3.46336 12.5132 2.9297 11.8353 2.52327C11.8043 2.50466 11.7641 2.51087 11.7362 2.53568C11.699 2.57291 11.7083 2.63186 11.7486 2.65978C13.0054 3.47578 13.9744 4.7913 14.2004 6.54739C14.6648 10.1154 12.1789 13.094 8.68066 13.1033C4.83574 13.1157 2.49535 9.70899 3.1083 6.64976C3.13925 6.49773 3.12377 6.3488 3.1733 6.20297C3.20115 5.66621 3.40547 4.82229 3.84507 3.95975C3.40237 4.18934 2.83895 4.91537 2.56032 5.58553C2.1579 6.5536 2.0186 7.71089 2.14552 8.8123C2.1548 8.89606 2.1641 8.97674 2.17337 9.0605C2.69037 12.0949 5.32797 14.4033 8.50111 14.397C12.0365 14.3908 14.9155 11.4837 14.8969 7.93734C14.8908 6.50394 14.4109 5.17913 13.6091 4.11182Z" fill="url(#paint1_radial_55_146)"/>
+                                                <path d="M13.6091 4.11182C13.1169 3.46336 12.5132 2.9297 11.8353 2.52327C11.8043 2.50466 11.7641 2.51087 11.7362 2.53568C11.699 2.57291 11.7083 2.63186 11.7486 2.65978C13.0054 3.47578 13.9744 4.7913 14.2004 6.54739C14.6648 10.1154 12.1789 13.094 8.68066 13.1033C4.83574 13.1157 2.49535 9.70899 3.1083 6.64976C3.13925 6.49773 3.12377 6.3488 3.1733 6.20297C3.20115 5.66621 3.40547 4.82229 3.84507 3.95975C3.40237 4.18934 2.83895 4.91537 2.56032 5.58553C2.1579 6.5536 2.0186 7.71089 2.14552 8.8123C2.1548 8.89606 2.1641 8.97674 2.17337 9.0605C2.69037 12.0949 5.32797 14.4033 8.50111 14.397C12.0365 14.3908 14.9155 11.4837 14.8969 7.93734C14.8908 6.50394 14.4109 5.17913 13.6091 4.11182Z" fill="url(#paint2_radial_55_146)"/>
+                                                <path d="M13.6091 4.11182C13.1169 3.46336 12.5132 2.9297 11.8353 2.52327C11.8043 2.50466 11.7641 2.51087 11.7362 2.53568C11.699 2.57291 11.7083 2.63186 11.7486 2.65978C13.0054 3.47578 13.9744 4.7913 14.2004 6.54739C14.6648 10.1154 12.1789 13.094 8.68066 13.1033C4.83574 13.1157 2.49535 9.70899 3.1083 6.64976C3.13925 6.49773 3.12377 6.3488 3.1733 6.20297C3.20115 5.66621 3.40547 4.82229 3.84507 3.95975C3.40237 4.18934 2.83895 4.91537 2.56032 5.58553C2.1579 6.5536 2.0186 7.71089 2.14552 8.8123C2.1548 8.89606 2.1641 8.97674 2.17337 9.0605C2.69037 12.0949 5.32797 14.4033 8.50111 14.397C12.0365 14.3908 14.9155 11.4837 14.8969 7.93734C14.8908 6.50394 14.4109 5.17913 13.6091 4.11182Z" fill="url(#paint3_radial_55_146)"/>
+                                                <path d="M14.3584 6.37059C14.151 4.5028 13.1046 3.2276 11.7673 2.48298C11.5444 2.35888 11.2627 2.41162 11.1017 2.61019L11.0986 2.6133C12.6217 3.5534 13.5814 5.21951 13.6309 6.95699C13.6898 9.06989 11.9592 10.7546 9.96554 10.8508C8.51672 10.9222 7.1515 10.221 6.4828 8.81547C6.3342 8.50211 6.22585 8.18563 6.17013 7.8009C5.85436 5.66628 7.2877 3.84502 8.6034 3.39204C7.89447 2.77152 6.1144 2.81494 4.79251 3.78917C3.83901 4.49038 3.21986 5.55766 3.01554 6.82975C2.86074 7.80088 3.00626 8.80924 3.39014 9.709C3.78021 10.6274 4.41483 11.4372 5.21663 12.0329C6.08345 12.6813 7.1298 13.0567 8.20715 13.1374C8.36502 13.1498 8.52602 13.156 8.6839 13.156C12.9158 13.1622 14.7547 9.94793 14.3584 6.37059Z" fill="url(#paint4_radial_55_146)"/>
+                                                <path d="M14.3584 6.37059C14.151 4.5028 13.1046 3.2276 11.7673 2.48298C11.5444 2.35888 11.2627 2.41162 11.1017 2.61019L11.0986 2.6133C12.6217 3.5534 13.5814 5.21951 13.6309 6.95699C13.6898 9.06989 11.9592 10.7546 9.96554 10.8508C8.51672 10.9222 7.1515 10.221 6.4828 8.81547C6.3342 8.50211 6.22585 8.18563 6.17013 7.8009C5.85436 5.66628 7.2877 3.84502 8.6034 3.39204C7.89447 2.77152 6.1144 2.81494 4.79251 3.78917C3.83901 4.49038 3.21986 5.55766 3.01554 6.82975C2.86074 7.80088 3.00626 8.80924 3.39014 9.709C3.78021 10.6274 4.41483 11.4372 5.21663 12.0329C6.08345 12.6813 7.1298 13.0567 8.20715 13.1374C8.36502 13.1498 8.52602 13.156 8.6839 13.156C12.9158 13.1622 14.7547 9.94793 14.3584 6.37059Z" fill="url(#paint5_radial_55_146)"/>
+                                                <path opacity="0.53" d="M14.3584 6.37059C14.151 4.5028 13.1046 3.2276 11.7673 2.48298C11.5444 2.35888 11.2627 2.41162 11.1017 2.61019L11.0986 2.6133C12.6217 3.5534 13.5814 5.21951 13.6309 6.95699C13.6898 9.06989 11.9592 10.7546 9.96554 10.8508C8.51672 10.9222 7.1515 10.221 6.4828 8.81547C6.3342 8.50211 6.22585 8.18563 6.17013 7.8009C5.85436 5.66628 7.2877 3.84502 8.6034 3.39204C7.89447 2.77152 6.1144 2.81494 4.79251 3.78917C3.83901 4.49038 3.21986 5.55766 3.01554 6.82975C2.86074 7.80088 3.00626 8.80924 3.39014 9.709C3.78021 10.6274 4.41483 11.4372 5.21663 12.0329C6.08345 12.6813 7.1298 13.0567 8.20715 13.1374C8.36502 13.1498 8.52602 13.156 8.6839 13.156C12.9158 13.1622 14.7547 9.94793 14.3584 6.37059Z" fill="url(#paint6_radial_55_146)"/>
+                                                <path opacity="0.53" d="M14.3584 6.37059C14.151 4.5028 13.1046 3.2276 11.7673 2.48298C11.5444 2.35888 11.2627 2.41162 11.1017 2.61019L11.0986 2.6133C12.6217 3.5534 13.5814 5.21951 13.6309 6.95699C13.6898 9.06989 11.9592 10.7546 9.96554 10.8508C8.51672 10.9222 7.1515 10.221 6.4828 8.81547C6.3342 8.50211 6.22585 8.18563 6.17013 7.8009C5.85436 5.66628 7.2877 3.84502 8.6034 3.39204C7.89447 2.77152 6.1144 2.81494 4.79251 3.78917C3.83901 4.49038 3.21986 5.55766 3.01554 6.82975C2.86074 7.80088 3.00626 8.80924 3.39014 9.709C3.78021 10.6274 4.41483 11.4372 5.21663 12.0329C6.08345 12.6813 7.1298 13.0567 8.20715 13.1374C8.36502 13.1498 8.52602 13.156 8.6839 13.156C12.9158 13.1622 14.7547 9.94793 14.3584 6.37059Z" fill="url(#paint7_radial_55_146)"/>
+                                                <path d="M11.1081 2.60378C11.105 2.60689 11.105 2.60999 11.1019 2.61308C10.9193 2.83958 10.9564 3.16846 11.1793 3.35462C12.139 4.14269 12.7829 5.26274 12.7829 6.55653C12.7829 8.34366 11.4022 9.7057 9.78621 9.60951C7.38389 9.46369 6.78021 7.0033 8.02781 5.93909C7.69036 5.86773 7.05884 6.00734 6.61614 6.6682C6.21989 7.26082 6.24154 8.17299 6.48611 8.82145C7.15479 10.2239 8.52003 10.9436 9.96886 10.8568C12.7055 10.6892 13.8757 8.42742 13.95 6.81713C14.0305 5.07034 13.6373 3.52214 11.7737 2.47966C11.5477 2.35247 11.2691 2.40522 11.1081 2.60378Z" fill="url(#paint8_radial_55_146)"/>
+                                                <path d="M13.6089 4.11163C13.4387 3.88513 13.2498 3.67416 13.0517 3.4756C12.8939 3.30805 12.7236 3.15294 12.544 3.00711C12.6462 3.09709 12.7453 3.19327 12.8412 3.29254C13.188 3.66798 13.4635 4.11163 13.6213 4.59565C13.9557 5.60712 13.934 6.8761 13.2963 7.86895C12.5348 9.05415 11.2964 9.64055 9.95906 9.61263C9.90023 9.61263 9.84451 9.61263 9.78568 9.60953C7.38336 9.4637 6.77969 7.00331 8.02729 5.9391C7.68984 5.86774 7.05832 6.00735 6.61562 6.66822C6.21937 7.26083 6.24102 8.173 6.48559 8.82146C6.33699 8.50809 6.22864 8.19161 6.17292 7.80689C5.85714 5.67226 7.29049 3.85103 8.60619 3.39803C7.89726 2.7775 6.11719 2.82093 4.7953 3.79516C4.02447 4.36294 3.47342 5.16962 3.18243 6.13145C3.22578 5.59158 3.43008 4.788 3.84802 3.9627C3.40533 4.19229 2.8419 4.91832 2.56328 5.58848C2.16083 6.55652 2.02153 7.71378 2.14845 8.81522C2.15773 8.89898 2.16703 8.97966 2.1763 9.06342C2.6902 12.0916 5.3247 14.4 8.49166 14.4C12.0301 14.4 14.8999 11.5238 14.8999 7.97751C14.8968 6.52548 14.4169 5.18824 13.6089 4.11163Z" fill="url(#paint9_linear_55_146)"/>
+                                                <path d="M13.6218 4.59575C13.4608 4.11172 13.1884 3.66807 12.8416 3.29264C12.0987 2.49216 11.0058 1.98023 9.95329 1.74751C9.06789 1.55206 8.13916 1.55514 7.30332 1.732C6.39317 1.92438 5.59444 2.3184 5.08984 2.80861C6.83587 1.78475 9.18864 1.97401 10.7984 3.12198C11.0678 3.31436 11.3185 3.53465 11.5445 3.77663C12.6156 4.93392 13.0522 6.86685 12.1513 8.25686C11.6993 8.96117 10.7272 9.61892 9.82016 9.61271C11.2102 9.68717 12.5073 9.09767 13.2936 7.87213C13.9344 6.8762 13.9561 5.60721 13.6218 4.59575Z" fill="url(#paint10_linear_55_146)"/>
+                                                <path d="M13.6218 4.59575C13.4608 4.11172 13.1884 3.66807 12.8416 3.29264C12.0987 2.49216 11.0058 1.98023 9.95329 1.74751C9.06789 1.55206 8.13916 1.55514 7.30332 1.732C6.39317 1.92438 5.59444 2.3184 5.08984 2.80861C6.83587 1.78475 9.18864 1.97401 10.7984 3.12198C11.0678 3.31436 11.3185 3.53465 11.5445 3.77663C12.6156 4.93392 13.0522 6.86685 12.1513 8.25686C11.6993 8.96117 10.7272 9.61892 9.82016 9.61271C11.2102 9.68717 12.5073 9.09767 13.2936 7.87213C13.9344 6.8762 13.9561 5.60721 13.6218 4.59575Z" fill="url(#paint11_linear_55_146)"/>
+                                                <defs>
+                                                <radialGradient id="paint0_radial_55_146" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(3.15893 5.32279) scale(8.35143 8.36998)">
+                                                <stop stop-color="#D30082"/>
+                                                <stop offset="1" stop-color="#FF0D6F" stop-opacity="0"/>
+                                                </radialGradient>
+                                                <radialGradient id="paint1_radial_55_146" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(14.7844 3.99419) scale(15.8409 15.8761)">
+                                                <stop stop-color="#FFDD00" stop-opacity="0.6"/>
+                                                <stop offset="0.0837" stop-color="#FFD800" stop-opacity="0.5244"/>
+                                                <stop offset="0.1822" stop-color="#FFCA00" stop-opacity="0.4353"/>
+                                                <stop offset="0.2884" stop-color="#FFB200" stop-opacity="0.3394"/>
+                                                <stop offset="0.3998" stop-color="#FF9100" stop-opacity="0.2388"/>
+                                                <stop offset="0.5154" stop-color="#FF6612" stop-opacity="0.1343"/>
+                                                <stop offset="0.6329" stop-color="#FF302B" stop-opacity="0.0282"/>
+                                                <stop offset="0.664" stop-color="#FF1F30" stop-opacity="0"/>
+                                                </radialGradient>
+                                                <radialGradient id="paint2_radial_55_146" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(8.86359 9.12511) scale(21.2831 21.3304)">
+                                                <stop offset="0.1528" stop-color="#AF0611"/>
+                                                <stop offset="0.2061" stop-color="#ED1E32" stop-opacity="0.5541"/>
+                                                <stop offset="0.2495" stop-color="#FF2D47" stop-opacity="0.1914"/>
+                                                <stop offset="0.2724" stop-color="#FF3450" stop-opacity="0"/>
+                                                </radialGradient>
+                                                <radialGradient id="paint3_radial_55_146" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(7.19859 8.86756) scale(21.4312 21.4789)">
+                                                <stop offset="0.1129" stop-color="#AF0611"/>
+                                                <stop offset="0.1893" stop-color="#ED1E32" stop-opacity="0.5541"/>
+                                                <stop offset="0.2515" stop-color="#FF2D47" stop-opacity="0.1914"/>
+                                                <stop offset="0.2843" stop-color="#FF3450" stop-opacity="0"/>
+                                                </radialGradient>
+                                                <radialGradient id="paint4_radial_55_146" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(13.2372 3.65204) scale(13.4674 13.4973)">
+                                                <stop stop-color="#FF9800"/>
+                                                <stop offset="0.295" stop-color="#FF7232"/>
+                                                <stop offset="0.4846" stop-color="#FF5B50"/>
+                                                <stop offset="0.626" stop-color="#FF4E5E"/>
+                                                <stop offset="0.7365" stop-color="#FF3E55"/>
+                                                <stop offset="0.8428" stop-color="#FF3450"/>
+                                                </radialGradient>
+                                                <radialGradient id="paint5_radial_55_146" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(13.2372 4.14814) scale(12.7757 12.8041)">
+                                                <stop offset="0.0841" stop-color="#FFDE00"/>
+                                                <stop offset="0.2081" stop-color="#FFD600" stop-opacity="0.832"/>
+                                                <stop offset="0.4033" stop-color="#FFBF00" stop-opacity="0.5677"/>
+                                                <stop offset="0.6437" stop-color="#FF9B00" stop-opacity="0.242"/>
+                                                <stop offset="0.8224" stop-color="#FF7C00" stop-opacity="0"/>
+                                                </radialGradient>
+                                                <radialGradient id="paint6_radial_55_146" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(10.0872 8.12708) rotate(75.7145) scale(6.44397 6.71172)">
+                                                <stop offset="0.3634" stop-color="#FF3450"/>
+                                                <stop offset="0.4111" stop-color="#FF424A" stop-opacity="0.7895"/>
+                                                <stop offset="0.5902" stop-color="#FF7232" stop-opacity="0"/>
+                                                </radialGradient>
+                                                <radialGradient id="paint7_radial_55_146" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(8.93479 8.65849) rotate(75.7145) scale(6.5176 6.51051)">
+                                                <stop offset="0.2159" stop-color="#FF3450" stop-opacity="0.8"/>
+                                                <stop offset="0.2702" stop-color="#FF424A" stop-opacity="0.6316"/>
+                                                <stop offset="0.4739" stop-color="#FF7232" stop-opacity="0"/>
+                                                </radialGradient>
+                                                <radialGradient id="paint8_radial_55_146" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(15.9626 2.09417) scale(22.7846 22.8352)">
+                                                <stop offset="0.0536" stop-color="#FFF339"/>
+                                                <stop offset="0.4573" stop-color="#FF9800"/>
+                                                <stop offset="0.5211" stop-color="#FF840D"/>
+                                                <stop offset="0.5871" stop-color="#FF772B"/>
+                                                <stop offset="0.6393" stop-color="#FF7232"/>
+                                                </radialGradient>
+                                                <linearGradient id="paint9_linear_55_146" x1="11.5442" y1="2.73125" x2="4.99018" y2="14.058" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FFF339" stop-opacity="0.8"/>
+                                                <stop offset="0.75" stop-color="#FFF339" stop-opacity="0"/>
+                                                </linearGradient>
+                                                <linearGradient id="paint10_linear_55_146" x1="9.46257" y1="9.65028" x2="9.46257" y2="1.68175" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#008EE9"/>
+                                                <stop offset="0.1016" stop-color="#1982EE"/>
+                                                <stop offset="0.3885" stop-color="#8565FD"/>
+                                                <stop offset="0.5309" stop-color="#A059FF"/>
+                                                <stop offset="0.6915" stop-color="#B24FFB"/>
+                                                <stop offset="0.9888" stop-color="#DD37EB"/>
+                                                <stop offset="1" stop-color="#DF36EA"/>
+                                                </linearGradient>
+                                                <linearGradient id="paint11_linear_55_146" x1="8.06429" y1="1.39155" x2="12.4164" y2="8.913" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.8054" stop-color="#A059FF" stop-opacity="0"/>
+                                                <stop offset="1" stop-color="#80008E" stop-opacity="0.5"/>
+                                                </linearGradient>
+                                                </defs>
+                                                </svg>
+                                            <span>FIREFOX</span>
+                                        </a>
+                                        <a href="https://microsoftedge.microsoft.com/addons/detail/metamask/ejbalbakoplchlghecdalmeeeajnimhm?hl=en-US" target="_blank">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.47914 14.2355C11.1514 13.8503 12.5736 12.8148 13.4632 11.4109C13.5717 11.2396 13.3803 11.0347 13.2011 11.1305C12.5172 11.4959 11.7056 11.7076 10.8351 11.7076C8.42212 11.7076 6.4613 10.0819 6.42086 8.06364C6.40721 7.38164 6.81587 6.77869 7.40889 6.52664L7.40849 6.52637C7.05791 6.64859 6.66368 6.69912 6.35879 6.90964C5.20239 7.70804 4.50041 9.18533 4.61223 10.5134C4.72076 11.8022 5.512 13.3124 6.88063 13.9871C7.59636 14.3399 8.51966 14.2825 9.47914 14.2355Z" fill="url(#paint0_linear_55_104)"/>
+                                                <path d="M9.42144 9.93543C9.85495 10.093 10.3331 10.1803 10.8355 10.1803C12.8042 10.1803 14.4002 8.84001 14.4003 7.18669C14.4003 3.90898 11.3309 1.62969 8.08554 1.60037C4.54724 1.56834 1.63281 4.41628 1.60059 7.94042C1.60059 7.94042 2.48583 5.21743 5.64802 5.21743C7.78773 5.21743 9.28374 6.48245 9.52947 7.43872C9.59523 7.61339 9.63138 7.80249 9.63138 8.00004C9.63138 8.41429 9.47319 8.79174 9.21373 9.07576C8.95665 9.35716 9.06258 9.80501 9.42144 9.93543Z" fill="url(#paint1_linear_55_104)"/>
+                                                <path d="M9.52926 7.43872C9.28355 6.48244 8.46523 4.63965 5.80705 4.63965C1.7197 4.63965 1.60037 7.94042 1.60037 7.94042C1.56781 11.5024 4.45705 14.4 8.0258 14.4C8.52572 14.4 9.01227 14.3431 9.47933 14.2356C4.29575 14.4891 3.76337 7.79727 7.4087 6.52637L7.4091 6.52664C7.59347 6.44829 7.79542 6.40347 8.00833 6.40119C8.70413 6.39382 9.29909 6.82747 9.52926 7.43872Z" fill="url(#paint2_linear_55_104)"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear_55_104" x1="4.60061" y1="10.3985" x2="13.4948" y2="10.3985" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#00376F"/>
+                                                <stop offset="1" stop-color="#004E99"/>
+                                                </linearGradient>
+                                                <linearGradient id="paint1_linear_55_104" x1="4.22831" y1="3.85711" x2="11.6538" y2="8.26733" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#00C2DD"/>
+                                                <stop offset="1" stop-color="#00D34F"/>
+                                                </linearGradient>
+                                                <linearGradient id="paint2_linear_55_104" x1="4.925" y1="5.14395" x2="6.91408" y2="14.307" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.0016" stop-color="#006393"/>
+                                                <stop offset="0.4" stop-color="#0086DE"/>
+                                                <stop offset="1" stop-color="#006393"/>
+                                                </linearGradient>
+                                                </defs>
+                                                </svg>
+                                            <span>EDGE</span>
+                                        </a>
+                                    </div>
+                                    <div class="w-download">
+                                        <label>Mobile</label>
+                                        <a href="https://metamask.app.link/bxwkE8oF99" target="_blank">
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.6105 7.04033L11.4428 5.78833L9.22363 8.00753L11.4427 10.2266L13.6179 8.97041C13.9571 8.76433 14.1595 8.40433 14.1595 8.00753C14.1595 7.61073 13.9569 7.25073 13.6105 7.04033Z" fill="#FFCE00"/>
+                                                <path d="M9.22337 8.00735L3.17874 1.91919C2.9685 2.12943 2.84082 2.41471 2.84082 2.73007V13.2661C2.84082 13.5814 2.9685 13.8667 3.17874 14.0771L9.22337 8.00735Z" fill="url(#paint0_linear_55_222)"/>
+                                                <path d="M9.22335 8.00742L11.4425 5.78822L11.4461 5.7847L8.47263 4.0727L4.55295 1.76902C4.19999 1.55126 3.77199 1.54374 3.41151 1.74646C3.32895 1.79894 3.25375 1.85158 3.17871 1.9191L9.22335 8.00742Z" fill="#00F076"/>
+                                                <path d="M3.17871 14.0769C3.25375 14.1444 3.32895 14.1971 3.41151 14.2496C3.59167 14.3472 3.77951 14.3998 3.96719 14.3998C4.16991 14.3998 4.36511 14.3398 4.54543 14.2347L8.47247 11.942L11.4459 10.23L11.4424 10.2265L9.22335 8.00732L3.17871 14.0769Z" fill="#F63448"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear_55_222" x1="0.139383" y1="11.0376" x2="6.21826" y2="4.95856" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#00E2FF"/>
+                                                <stop offset="1" stop-color="#00C5FF"/>
+                                                </linearGradient>
+                                                </defs>
+                                                </svg>
+                                            <span>GOOGLE PLAY</span>
+                                        </a>
+                                        <a href="https://metamask.app.link/skAH3BaF99" target="_blank">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.4152 8.41816C11.3985 6.7295 12.7925 5.9195 12.8545 5.8795C12.0712 4.73283 10.8512 4.57616 10.4165 4.55816C9.37851 4.45283 8.39051 5.1695 7.86318 5.1695C7.33785 5.1695 6.52451 4.5735 5.66318 4.5895C4.53251 4.60616 3.48918 5.24683 2.90651 6.26016C1.73051 8.30016 2.60518 11.3235 3.75118 12.9782C4.31118 13.7882 4.97918 14.6982 5.85585 14.6648C6.69985 14.6315 7.01918 14.1188 8.03985 14.1188C9.06051 14.1188 9.34785 14.6655 10.2412 14.6488C11.1498 14.6315 11.7252 13.8228 12.2812 13.0108C12.9245 12.0708 13.1892 11.1608 13.2052 11.1142C13.1852 11.1055 11.4332 10.4342 11.4158 8.4175L11.4152 8.41816ZM9.73651 3.46283C10.2018 2.89816 10.5158 2.11483 10.4298 1.3335C9.75985 1.36016 8.94718 1.78016 8.46651 2.3435C8.03518 2.8435 7.65718 3.64016 7.75851 4.40616C8.50651 4.46483 9.27051 4.02616 9.73651 3.46283Z" fill="#133664"/>
+                                            </svg>
+                                            <span>APP STORE</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="w-step-icon me-0 ms-auto">
+                                    <img src="images/step-1.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-next-step-wrap">
+                        <img src="images/line-2.svg" class="w-100" alt="" />
+                        <a class="w-next-step justify-content-end" style="margin-right: -34px;" href="#xstep2">
+                            <span>Set Up Game Account</span>
+                            <div class="w-number"><span>2</span></div>
+                        </a>
+                    </div>
+                    <div class="w-footer-buttons-mobile">
+                        <button type="button" class="w-footer-button btnPrev">
+                            Back
+                        </button>
+                        <button type="button" class="w-footer-button btnNext">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-decor" style="top: 0;left: 0;"><img src="images/decor/section-1-top-left.svg" alt="" /></div>
+            <div class="w-decor" style="bottom: 60px;left: 0;"><img src="images/decor/section-1-bottom-left.svg" alt="" /></div>
+            <div class="w-decor" style="bottom: 100px;right: 0;"><img src="images/decor/section-1-bottom-right.svg" alt="" /></div>
+        </section>
+
+        <section class="section" id="Section2">
+            <div class="container">
+                <div class="w-step w-step-2">
+                    <div class="w-step-body order-1">
+                        <div class="w-number active order-2"><span>2</span></div>
+                        <div class="row gx-xl-5 align-items-end">
+                            <div class="col-lg-6">
+                                <div class="w-step-icon w-step-icon-desktop mt-lg-3">
+                                    <img src="images/step-2.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="w-title">Set Up Game Account</div>
+                                <div class="w-step-icon w-step-icon-mobile">
+                                    <img src="images/step-2.png" alt="" />
+                                </div>
+                                <div class="w-step-content text-end">
+                                    <p>Create an account on the <b><a class="w-link-primary" target="_blank" href="https://marketplace.warena.io/">Warena Official Marketplace </a></b></p>
+                                    <div class="w-step-note">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.00016 7.33333C8.52758 7.33333 9.04315 7.17694 9.48168 6.88392C9.92021 6.5909 10.262 6.17443 10.4638 5.68716C10.6657 5.19989 10.7185 4.66371 10.6156 4.14643C10.5127 3.62914 10.2587 3.15399 9.88578 2.78105C9.51284 2.40811 9.03769 2.15413 8.5204 2.05124C8.00312 1.94835 7.46694 2.00116 6.97967 2.20299C6.4924 2.40482 6.07593 2.74662 5.78291 3.18515C5.48989 3.62368 5.3335 4.13925 5.3335 4.66667C5.3335 5.37391 5.61445 6.05219 6.11454 6.55229C6.61464 7.05238 7.29292 7.33333 8.00016 7.33333ZM8.00016 3.33333C8.26387 3.33333 8.52166 3.41153 8.74092 3.55804C8.96019 3.70455 9.13109 3.91279 9.232 4.15642C9.33292 4.40006 9.35932 4.66815 9.30788 4.92679C9.25643 5.18543 9.12944 5.42301 8.94297 5.60948C8.7565 5.79595 8.51892 5.92293 8.26028 5.97438C8.00164 6.02583 7.73355 5.99942 7.48992 5.89851C7.24628 5.79759 7.03805 5.62669 6.89154 5.40743C6.74503 5.18816 6.66683 4.93038 6.66683 4.66667C6.66683 4.31305 6.80731 3.97391 7.05735 3.72386C7.3074 3.47381 7.64654 3.33333 8.00016 3.33333Z" fill="#92ABBC"/>
+                                            <path d="M8.00016 8.6665C6.76249 8.6665 5.5755 9.15817 4.70033 10.0333C3.82516 10.9085 3.3335 12.0955 3.3335 13.3332C3.3335 13.51 3.40373 13.6796 3.52876 13.8046C3.65378 13.9296 3.82335 13.9998 4.00016 13.9998C4.17697 13.9998 4.34654 13.9296 4.47157 13.8046C4.59659 13.6796 4.66683 13.51 4.66683 13.3332C4.66683 12.4491 5.01802 11.6013 5.64314 10.9761C6.26826 10.351 7.11611 9.99984 8.00016 9.99984C8.88422 9.99984 9.73207 10.351 10.3572 10.9761C10.9823 11.6013 11.3335 12.4491 11.3335 13.3332C11.3335 13.51 11.4037 13.6796 11.5288 13.8046C11.6538 13.9296 11.8234 13.9998 12.0002 13.9998C12.177 13.9998 12.3465 13.9296 12.4716 13.8046C12.5966 13.6796 12.6668 13.51 12.6668 13.3332C12.6668 12.0955 12.1752 10.9085 11.3 10.0333C10.4248 9.15817 9.23784 8.6665 8.00016 8.6665Z" fill="#92ABBC"/>
+                                            </svg>
+                                        <span>Your account is for logging into both the Marketplace and
+                                            Warena game launcher.</span>
+                                    </div>
+                                    <img src="images/image-2.png" alt="" class="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-next-step-wrap">
+                        <img src="images/line-3.svg" class="w-100" alt="" />
+                        <a class="w-next-step" style="margin-left: -34px;" href="#xstep3">
+                            <div class="w-number"><span>3</span></div>
+                            <span>Best Get 3 NFTs To Start Playing</span>
+                        </a>
+                    </div>
+                    <div class="w-footer-buttons-mobile">
+                        <button type="button" class="w-footer-button btnPrev">
+                            Back
+                        </button>
+                        <button type="button" class="w-footer-button btnNext">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-decor" style="top: 60px;left: 0;"><img src="images/decor/section-2-top-left.svg" alt="" /></div>
+            <div class="w-decor" style="bottom: 0;right: 0;"><img src="images/decor/section-2-bottom-right.svg" alt="" /></div>
+        </section>
+
+        <section class="section" id="Section3">
+            <div class="container">
+                <div class="w-step w-step-3">
+                    <div class="w-step-body">
+                        <div class="w-number active"><span>3</span></div>
+                        <div class="row gx-xl-5">
+                            <div class="col-lg-6">
+                                <div class="w-title">Best Get 3 NFTs To Start Playing</div>
+                                <div class="w-sub-title">1. Buy NFT on Warena Marketplace</div>
+                                <div class="w-step-content">
+                                    <p>Deposit WARE or RENA on MetaMask and buy NFT from the <b><a class="w-link-primary" target="_blank" href="https://marketplace.warena.io/">Warena Official Marketplace </a></b></p>
+                                    <div class="d-flex">
+                                        <ul>
+                                            <li><b>Purchase $RENA on:</b>
+                                                <a target="_blank" href="https://pancakeswap.finance/swap?outputCurrency=0xa9D75Cc3405F0450955050C520843f99Aff8749D">Pancakeswap</a> |
+                                                <a target="_blank" href="https://www.mexc.com/exchange/RENA_USDT">MEXC </a>|
+                                                <a target="_blank" href="https://www.gate.io/trade/RENA_USDT">Gate.io</a> |
+                                                <a target="_blank" href="https://exchange.coin98.com/pancakeswap/0xa9D75Cc3405F0450955050C520843f99Aff8749D">Coin98</a></li>
+                                            <li><b>Purchase $WARE on:</b> <a target="_blank" href="https://pancakeswap.finance/swap?outputCurrency=0x9de8418f314e888946C4220671D3d94E448bcD33">PancakeSwap</a></li>
+                                        </ul>
+                                        <img src="images/box.png" alt="" style="margin-left: 8px;min-width: 100px;height:100px;margin-top: -20px;" />
+                                    </div>
+                                </div>
+                                <div class="w-sub-title">2. Buy NFT On The 3rd Marketplace</div>
+                                <div class="w-step-content">
+                                    <div class="d-flex">
+                                        <img src="images/shop.png" alt="" style="margin-right: 8px;min-width: 89px;" />
+                                        <ul class="mb-0">
+                                            <li><b>Buy NFT on<a class="w-link-primary" target="_blank" href="https://www.binance.com/en/nft/search-result?serialNo=174807384669008896&tab=mystery-box&order=set_end_time%401"> BinanceNFT</a></b></li>
+                                            <li><b>Buy NFT on<a class="w-link-primary" target="_blank" href="https://treasureland.market/assets?sort=2&contract=0x835832df0abb8d9d72b2fa9d065c75574c36cb06&chain_id=56"> TreasurelandNFT</a></b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="w-step-icon">
+                                    <img src="images/step-3.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-next-step-wrap">
+                        <img src="images/line-2.svg" class="w-100" alt="" />
+                        <a class="w-next-step justify-content-end" style="margin-right: -15px;" href="#xstep4">
+                            <span>Download & Play</span>
+                            <div class="w-number"><span>4</span></div>
+                        </a>
+                    </div>
+                    <div class="w-footer-buttons-mobile">
+                        <button type="button" class="w-footer-button btnPrev">
+                            Back
+                        </button>
+                        <button type="button" class="w-footer-button btnNext">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-decor" style="top: 60px;left: 0;"><img src="images/decor/section-3-top-left.svg" alt="" /></div>
+            <div class="w-decor" style="bottom: 0;left: 0;"><img src="images/decor/section-3-bottom-left.svg" alt="" /></div>
+            <div class="w-decor" style="bottom: 20%;right: 0;"><img src="images/decor/section-3-bottom-right.svg" alt="" /></div>
+        </section>
+
+        <section class="section" id="Section4">
+            <div class="container">
+                <div class="w-step w-step-4">
+                    <div class="w-step-body order-1">
+                        <div class="w-number active order-2"><span>4</span></div>
+                        <div class="row gx-xl-5">
+                            <div class="col-lg-6 ">
+                                <div class="w-step-icon w-step-icon-desktop">
+                                    <img src="images/step-4.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="w-title">Download & Play</div>
+                                <div class="w-step-content text-end">
+                                    <p>Start play and earn with Warena on:</p>
+                                    <div class="w-download">
+                                        <a href="https://play.warena.io/" target="_blank">
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.64502 3.82987C6.62042 0.367227 12.1376 1.05047 14.1993 5.09555C12.7472 5.09635 10.4743 5.09475 9.243 5.09555C8.35014 5.09555 7.7733 5.07555 7.14926 5.40438C6.41561 5.7908 5.86117 6.50685 5.66836 7.34851L3.64502 3.82987Z" fill="#F44336"/>
+                                                <path d="M6.37109 8.00071C6.37109 9.17439 7.32556 10.1289 8.49844 10.1289C9.67132 10.1289 10.6258 9.17439 10.6258 8.00071C10.6258 6.82702 9.67132 5.87256 8.49844 5.87256C7.32476 5.87176 6.37109 6.82702 6.37109 8.00071Z" fill="#2196F3"/>
+                                                <path d="M9.32315 10.7863C8.12946 11.1407 6.73177 10.7479 5.96691 9.4262C5.38287 8.41813 3.83877 5.72914 3.13792 4.50586C0.68015 8.27252 2.7979 13.4049 7.259 14.2809L9.32315 10.7863Z" fill="#4CAF50"/>
+                                                <path d="M10.4737 5.87141C11.4682 6.79627 11.685 8.29397 11.0113 9.45485C10.5041 10.3301 8.88398 13.0639 8.09912 14.3872C12.6954 14.6704 16.0461 10.1661 14.5324 5.87061L10.4737 5.87141Z" fill="#FFC107"/>
+                                            </svg>
+                                            <span>BROWSER</span>
+                                        </a>
+                                        <label>Desktop</label>
+                                    </div>
+                                    <div class="w-download">
+                                        <a href="https://apps.apple.com/jm/app/warena/id1600454991" target="_blank">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.4152 8.41816C11.3985 6.7295 12.7925 5.9195 12.8545 5.8795C12.0712 4.73283 10.8512 4.57616 10.4165 4.55816C9.37851 4.45283 8.39051 5.1695 7.86318 5.1695C7.33785 5.1695 6.52451 4.5735 5.66318 4.5895C4.53251 4.60616 3.48918 5.24683 2.90651 6.26016C1.73051 8.30016 2.60518 11.3235 3.75118 12.9782C4.31118 13.7882 4.97918 14.6982 5.85585 14.6648C6.69985 14.6315 7.01918 14.1188 8.03985 14.1188C9.06051 14.1188 9.34785 14.6655 10.2412 14.6488C11.1498 14.6315 11.7252 13.8228 12.2812 13.0108C12.9245 12.0708 13.1892 11.1608 13.2052 11.1142C13.1852 11.1055 11.4332 10.4342 11.4158 8.4175L11.4152 8.41816ZM9.73651 3.46283C10.2018 2.89816 10.5158 2.11483 10.4298 1.3335C9.75985 1.36016 8.94718 1.78016 8.46651 2.3435C8.03518 2.8435 7.65718 3.64016 7.75851 4.40616C8.50651 4.46483 9.27051 4.02616 9.73651 3.46283Z" fill="#133664"/>
+                                            </svg>
+                                            <span>APP STORE</span>
+                                        </a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.metaverse.warena&hl=en&gl=US" target="_blank">
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.33124 5.67318H3.29724C2.85991 5.67318 2.50391 6.03118 2.50391 6.46651V9.92184C2.50391 10.3592 2.85991 10.7152 3.29724 10.7152H3.33191C3.76857 10.7152 4.12524 10.3585 4.12524 9.92184V6.46651C4.12457 6.03051 3.76791 5.67318 3.33124 5.67318ZM4.50457 11.2552C4.50457 11.6565 4.83257 11.9832 5.23391 11.9832H6.01391V13.8498C6.01391 14.2878 6.37057 14.6438 6.80724 14.6438H6.84057C7.27857 14.6438 7.63524 14.2872 7.63524 13.8492V11.9832H8.72457V13.8498C8.72457 14.2878 9.08324 14.6438 9.51924 14.6438H9.55257C9.99057 14.6438 10.3466 14.2872 10.3466 13.8492V11.9832H11.1266C11.5272 11.9832 11.8552 11.6565 11.8552 11.2552V5.80051H4.50457V11.2552ZM10.0106 2.49184L10.6299 1.53651C10.6399 1.52207 10.6468 1.50578 10.6504 1.48861C10.654 1.47143 10.6541 1.45372 10.6507 1.4365C10.6473 1.41929 10.6405 1.40294 10.6307 1.3884C10.6208 1.37386 10.6082 1.36144 10.5935 1.35186C10.5788 1.34228 10.5623 1.33575 10.5451 1.33264C10.5278 1.32954 10.5101 1.32992 10.493 1.33377C10.4759 1.33762 10.4597 1.34486 10.4454 1.35506C10.4312 1.36527 10.4191 1.37823 10.4099 1.39318L9.76791 2.38184C9.26406 2.17703 8.72512 2.07241 8.18124 2.07384C7.61191 2.07384 7.07591 2.18451 6.59324 2.38184L5.95257 1.39318C5.94318 1.37848 5.93095 1.3658 5.91661 1.35588C5.90226 1.34596 5.88608 1.339 5.86901 1.3354C5.85195 1.3318 5.83434 1.33163 5.8172 1.33492C5.80007 1.3382 5.78377 1.34486 5.76924 1.35451C5.75473 1.3639 5.74221 1.37606 5.73241 1.3903C5.72261 1.40454 5.71571 1.42057 5.71212 1.43748C5.70853 1.45439 5.70831 1.47184 5.71147 1.48883C5.71464 1.50583 5.72113 1.52203 5.73057 1.53651L6.35057 2.49184C5.23324 3.03984 4.47991 4.07118 4.47991 5.25451C4.47991 5.32784 4.48391 5.39918 4.49057 5.46984H11.8706C11.8759 5.39918 11.8799 5.32718 11.8799 5.25451C11.8799 4.07118 11.1266 3.03984 10.0099 2.49184H10.0106ZM6.46991 4.20318C6.37584 4.20335 6.28556 4.16616 6.21892 4.09977C6.15229 4.03338 6.11475 3.94324 6.11457 3.84918C6.1144 3.75511 6.15159 3.66483 6.21798 3.59819C6.28437 3.53156 6.37451 3.49402 6.46857 3.49384C6.56264 3.49367 6.65292 3.53086 6.71955 3.59725C6.78619 3.66364 6.82373 3.75378 6.82391 3.84784C6.82408 3.94191 6.78689 4.03219 6.7205 4.09883C6.65411 4.16546 6.56397 4.203 6.46991 4.20318ZM9.89124 4.20318C9.84466 4.20331 9.79852 4.19426 9.75544 4.17656C9.71236 4.15886 9.67319 4.13284 9.64016 4.1C9.57346 4.03368 9.53584 3.94357 9.53557 3.84951C9.53531 3.75545 9.57242 3.66513 9.63875 3.59843C9.70507 3.53173 9.79518 3.49411 9.88924 3.49384C9.9833 3.49358 10.0736 3.53069 10.1403 3.59702C10.207 3.66334 10.2446 3.75345 10.2449 3.84751C10.2452 3.94157 10.2081 4.03189 10.1417 4.09859C10.0754 4.16529 9.9853 4.20291 9.89124 4.20318ZM13.0632 5.67318H13.0299C12.5932 5.67318 12.2359 6.03118 12.2359 6.46651V9.92184C12.2359 10.3592 12.5939 10.7152 13.0299 10.7152H13.0632C13.5012 10.7152 13.8572 10.3585 13.8572 9.92184V6.46651C13.8572 6.03051 13.5006 5.67318 13.0632 5.67318Z" fill="#6CB633"/>
+                                            </svg>
+                                            <span>ANDROID</span>
+                                        </a>
+                                        <label>Mobile</label>
+                                    </div>
+                                    <div class="w-step-icon w-step-icon-mobile">
+                                        <img src="images/step-4.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-next-step-wrap">
+                        <img src="images/line-3.svg" class="w-100" alt="" />
+                        <div class="w-next-step" style="margin-left: -34px;">
+                            <div class="w-number">
+                                <span>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.81367 25.0324H21.3695L20.6266 22.6269C20.7367 22.7229 26.9999 28.0914 26.9999 28.0914V4.60879C26.9257 3.1491 25.6689 1.90869 24.1111 1.90869L5.81912 1.91196C4.26234 1.91196 2.99902 3.15455 2.99902 4.61424V22.3312C2.99902 23.8706 4.26016 25.0324 5.81367 25.0324V25.0324ZM17.321 8.10855L17.285 8.12164L17.2981 8.10855H17.321ZM8.99597 9.49296C10.9957 8.03764 12.8492 8.10746 12.8492 8.10746L12.9987 8.25473C10.5517 8.83839 9.44216 9.93152 9.44216 9.93152C9.55562 9.90752 14.4965 7.05687 20.4836 10.0035C20.4836 10.0035 19.372 8.98131 17.0755 8.32674L17.2784 8.12709C17.5959 8.12818 19.276 8.1871 21.0739 9.50169C21.0739 9.50169 23.0856 12.9382 23.0856 17.1601C23.019 17.0794 21.8375 18.9777 18.797 19.0431C18.797 19.0431 18.2821 18.4606 17.9156 17.9522C19.6938 17.4416 20.3593 16.4205 20.3593 16.4205C16.8977 18.6002 13.8638 18.2598 10.2342 16.787C10.2004 16.787 10.1851 16.7718 10.1676 16.7543V16.7478C10.1502 16.7314 10.1349 16.715 10.1011 16.715H10.0356C9.81309 16.5688 9.66472 16.4968 9.66472 16.4968C9.66472 16.4968 10.3291 17.518 12.0364 18.0285C11.5881 18.5402 11.144 19.1217 11.144 19.1217C8.10466 19.0497 6.99626 17.1514 6.99626 17.1514C6.99626 12.9229 8.99597 9.49296 8.99597 9.49296V9.49296Z" fill="currentColor"/>
+                                        <path d="M17.5167 15.8411C18.2924 15.8411 18.924 15.1866 18.924 14.3793C18.924 13.5774 18.2956 12.9229 17.5167 12.9229V12.9261C16.7443 12.9261 16.1116 13.5785 16.1094 14.3858C16.1094 15.1866 16.741 15.8411 17.5167 15.8411Z" fill="currentColor"/>
+                                        <path d="M12.4786 15.8411C13.2543 15.8411 13.8859 15.1866 13.8859 14.3793C13.8859 13.5774 13.2586 12.9229 12.483 12.9229L12.4786 12.9261C11.7029 12.9261 11.0713 13.5785 11.0713 14.3858C11.0713 15.1866 11.7029 15.8411 12.4786 15.8411V15.8411Z" fill="currentColor"/>
+                                    </svg>                                
+                                </span>
+                            </div>
+                            <span>
+                                <a href="https://discord.com/invite/warenaofficial" target="_blank">Join Our Discord</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="w-footer-buttons-mobile">
+                        <button type="button" class="w-footer-button btnPrev">
+                            Back
+                        </button>
+                        <a href="https://discord.com/invite/warenaofficial" target="_blank" type="button" class="w-footer-button btnFinish">
+                            JOIN DISCORD
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-decor" style="top: 10px;left: 0;"><img src="images/decor/section-4-top-left.svg" alt="" /></div>
+            <div class="w-decor" style="bottom: 0;left: 0;"><img src="images/decor/section-4-bottom-left.svg" alt="" /></div>
+            <div class="w-decor" style="bottom: 0;right: 0;"><img src="images/decor/section-4-bottom-right.svg" alt="" /></div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="plugins/fullpage/jquery.fullpage.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.w-fullpage').fullpage({
+                responsive: 767,
+                anchors: ['started', 'xstep1', 'xstep2', 'xstep3', 'xstep4'],
+                navigation: true,
+                navigationPosition: 'left',
+                navigationTooltips: ['Get Started', '1. Create MetaMask Wallet', '2. Account Setup', '3. Getting NFT', '4. Download & Play'],
+                onLeave: function(index, nextIndex, direction) {
+                    if (nextIndex == 1) {
+                        $('#fp-nav').hide();
+                    } else {
+                        $('#fp-nav').show();
+                    }
+                }
+            });
+        });
+        window.onload = () => {
+            $('#w_loading').fadeOut(300);
+        }
+        $(window).resize(function() {
+            manageFullPage();
+        })
+        manageFullPage();
+        var currentStep = 1;
+
+        function manageFullPage() {
+            if ($(this).width() <= 767) {
+                currentStep = 0;
+                gotoStep();
+
+                $('#btnGetStarted').on('click', (e) => {
+                    e.preventDefault();
+                    currentStep = 1;
+                    gotoStep();
+                })
+                $('.btnPrev').on('click', (e) => {
+                    e.preventDefault();
+                    if (currentStep > 0) {
+                        currentStep -= 1;
+                        gotoStep();
+                    }
+                })
+                $('.btnNext').on('click', (e) => {
+                    e.preventDefault();
+                    if (currentStep < 4) {
+                        currentStep += 1;
+                        gotoStep();
+                    }
+                })
+            }
+        }
+
+        function gotoStep() {
+            $('.w-step-mobile-item').hide();
+            $('.section').hide();
+            $(`#Section${currentStep}`).show();
+            $(`#Step${currentStep}`).show();
+            if (currentStep === 0) {
+                $('.btnPrev').addClass('hidden');
+            } else {
+                $('.btnPrev').removeClass('hidden');
+            }
+            if (currentStep === 4) {
+                $('.btnNext').addClass('hidden');
+            } else {
+                $('.btnNext').removeClass('hidden');
+            }
+            $('html, body').animate({
+                scrollTop: $(`#Section${currentStep}`).offset().top - 20
+            }, 200);
+        }
+    </script>
+</body>
+
+</html>
