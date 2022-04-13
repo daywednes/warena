@@ -783,7 +783,7 @@ header {
         margin-left: -24px;
         margin-top: -34px;
         bottom: -15px !important;
-        background-image: url(../images/roadmap-step-lg.png);
+        /* background-image: url(../images/roadmap-step-lg.png); */
     }
 }
 
